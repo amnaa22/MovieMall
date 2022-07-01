@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:fRating="clr-namespace:Rating;assembly=Rating"
+             x:Class="MovieMall.Ice"
+             BackgroundColor="#03051a"
+             Title="ICE">
+    
+    <Grid>
+
+            <!-- Pozadinska slika -->
+            <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                <Frame HeightRequest="205" BackgroundColor="Black" Padding="0" Margin="0" CornerRadius="25">
+                    <Image Source="https://tvseans.az/uploads/frame/xOaSL0JR7e2_k3MmBKRDJSKPHrp6H46Q.jpg"/>
+                </Frame>
+            </StackLayout>
+
+
+            <!-- Podloga za informacije -->
+            <StackLayout Padding="0" Margin="0,155,0,0" HorizontalOptions="FillAndExpand">
+                <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0" CornerRadius="25">
+
+
+                    <!-- Informacije o filmu -->
+                    <ScrollView>
+                        <StackLayout>
+
+                            <!-- Osnovne informacije o filmu -->
+                            <StackLayout Margin="30,45,20,20">
+                                <StackLayout>
+                                    <Image Source="https://i.ibb.co/nbGGvZf/Ice.png" HorizontalOptions="Center"/>
+                                </StackLayout>
+                                <Label Text="Ice (Lyod)" FontSize="25" FontAttributes="Bold" TextColor="Black" Margin="0,15,0,0"/>
+                                <Label Text="2009 Romance / Drama / Musical" FontSize="15"/>
+                                <Label Text="1h 53m / PG-13" FontSize="15"/>
+                            </StackLayout>
+
+                            <!-- Linija -->
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,4"/>
+
+                            <!-- Kratak sadrzaj -->
+                            <StackLayout>
+                                <Label TextColor="#37383b" Margin="30,5,30,15" CharacterSpacing="0.5" FontSize="15"  Text="Nadya had a dream to become a figure skater and after her mother's death at a very young age, she had to push herself so hard to become a great figure skater. Nadya gives up her dream of becoming a champion figure skater when she is hospitalized with an injury. But then she meets Sasha, a hockey player, who decides to teach her to believe in herself and her dream again."/>
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,10"/>
+
+                            <StackLayout Margin="30,0,10,20">
+                                <Label Text="CAST" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <!-- Glumci prvi red -->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <StackLayout>
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://resizing.flixster.com/RYy2lWEODyo4Spzyn-qNXnlnil4=/100x120/v2/https://flxt.tmsimg.com/assets/1136033_v9_aa.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Aglaya Tarasova &#10;as Nadya"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="5,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://m.media-amazon.com/images/M/MV5BMjg4MjlhNzItOTMyNS00NjYxLTlmYjktNGU1Y2QzZWM2YjM1XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UX214_CR0,0,214,317_AL_.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Alexander Petrov &#10;as Sasha"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="5,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://m.media-amazon.com/images/M/MV5BNWRhYzk0NGMtODhiZi00Y2QwLTliYzAtNTMxNDY0NDAyMGE3XkEyXkFqcGdeQXVyMTMxMTk5NTc0._V1_UX214_CR0,0,214,317_AL_.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Miloš Biković &#10;as Leonov"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="0,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://www.kontramarka.de/upload/artists/mariya-aronova.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Mariya Aronova &#10;as Shatalina"/>
+                                    </StackLayout>
+
+                                </StackLayout>
+
+                                <!-- Glumci drugi red -->
+                                <StackLayout Orientation="Horizontal" Padding="0,10">
+
+                                    <StackLayout>
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://m.media-amazon.com/images/M/MV5BMjE3NTEyNzgwOV5BMl5BanBnXkFtZTcwODIwOTgwNA@@._V1_UY264_CR0,0,178,264_AL_.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Kseniya Rappoport &#10;as Nadya's mother"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="5,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://images.mubicdn.net/images/cast_member/572905/cache-522062-1583887742/image-w856.jpg?size=800x" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Diana Enakaeva &#10;as Nadya (child)"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="0,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://www.themoviedb.org/t/p/w500/1iMP5YsgeXIOCZfkr79yo5mUZ2V.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Yan Tsapnik &#10;as Vsevolod Igorevic"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="3,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://aidwiki.com/images/wiki/origin/kseniya_lavrova_glinka_aidwiki_1.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Kseniya Lavrova-Glinka &#10;as Nadya's aunt"/>
+                                    </StackLayout>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,10"/>
+
+                            <!-- Detaljne informacije -->
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="58">
+                                <Label Text="Director" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Oleg Trofim" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="63">
+                                <Label Text="Writers" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Andrey Zolotarev &#10;Oleg Malovichko" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="27">
+                                <Label Text="Produced by" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Fyodor Bondarchuk &#10;Dmitriy Rudovskiy &#10;Alexander Andryuschenko &#10;Mikhail Vrubel &#10;Vyacheslav Murugov" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="35">
+                                <Label Text="Production &#10;companies" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Art Pictures Studio &#10;Vodorod &#10;Columbia Pictures" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="25">
+                                <Label Text="Release date" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="February 14, 2018 &#10;(Russia)" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="63">
+                                <Label Text="Awards" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="2 wins, 10 nominations" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="55">
+                                <Label Text="Country &#10;of origin" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Russia" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="50">
+                                <Label Text="Filming &#10;locations" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Irkutsk, Moscow, Russia" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="65">
+                                <Label Text="Budget" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="$2 million &#10;(₽150 million)" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,15" Spacing="43">
+                                <Label Text="Box office" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="$26.4 million &#10;(₽1 billion)" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Reviews -->
+                            <StackLayout Margin="30,0,10,20">
+
+                                <Label Text="REVIEWS &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+                                <Label Text="Audience rating summary" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Label Text="4.6" HorizontalOptions="CenterAndExpand" FontSize="35"/>
+                                <Image Source="https://i.ibb.co/syLGkvG/4-7.jpg" WidthRequest="100"/>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="50,10,50,10"/>
+                                <Label Text="Google users" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Label Text="86% liked this film" HorizontalOptions="CenterAndExpand" FontSize="22"/>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="50,10,50,10"/>
+                                <Label Text="Review-aggregation websites&#10;" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Image Source="https://i.ibb.co/hymYZmb/Ice-Review.png" HeightRequest="265"/>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Our personal review -->
+                            <StackLayout Margin="30,5,10,20" Spacing="15">
+
+                                <Label Text="OUR PERSONAL REVIEW &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="This movie is one of our favorites when it comes to love and the power of goodwill!"  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="The movie has really great message for everyone. If you have a dream, you need to work for it and never give up on him. Nadya lost her mother at 12 years old and she ended up alone with no family. But that didn't stop her to achieve her dream to become a great figure skater." TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5" />
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="Although the movie isn't that popular besides in Russia, it has an amazing life story, great love, and soul, carried out by amazing actors. It definitely deserves better publicity!"  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="We absolutely love this movie! Great love and passion show ups how it can be tricky when it comes to life obstacles. No matter how our love seems great at that very moment if it can't get through problems, it's probably the best for us to let it go. And when you think you will never love again and loses hope in life, somebody will show up to bring love and faith back to your life again!"  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+                                <Image Source="https://i.ibb.co/Bs7bnky/5.png" HeightRequest="30"/>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Audience reviews -->
+                            <StackLayout Margin="30,5,10,10">
+
+                                <Label Text="AUDIENCE REVIEWS &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="chenluinfinity &#10;4 years ago   " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="I can't believe this is the leading actress's first film, she has done a great job. The two actors are good as well. The movie itself is not only a love story, it is also a movie about dreams, about sport and about family. I just love it!&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="h-47203-12564 &#10;4 years ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="This movie is so excellent! It got my adrenalin pumping. Begin again, dreams will come true finally. I was also touched by their love. When you want to give up, love will give you courage to move on.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="tasseled &#10;4 years ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/syLGkvG/4-7.jpg" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="This movie has so much more than just cheesy romance: drama, inspirational success story, fun musical acts, beautiful cinematography, and charming leading actors. Yes, it's a bit exaggerated in some places, but it's a heart-warming, gut-wrenching hell of a movie appropriate for all ages.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="r-42447 &#10;4 years ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="This movie is amazing!!!! Without a doubt 5 stars!!!&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="1">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Marko M &#10;3 years ago   " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="I loved it. I didn't know what I was about to see as I went on a blind recommendation, and as soon as the movie started, I loved it. By the end, I was enchanted. Perfectly harmonized genres.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Dr_Mark_ODoherty &#10;2 years ago " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/P4qVVL3/4-5-stars-2.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="Nadya and Sasha - the two main protagonists in this very educational story - also had a great chemistry, I think, making the movie extra-special. This film is also a great testament of resilience in the face of adversity, and the unshakeable belief in the power of the human spirit; reminding us that we have the magic power, to manifest dreams, love and positive change!&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout>
+
+                                <!--Korisnikova ocjena zvjezdicama-->
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,10,40,15"/>
+                                <Label Text="YOUR REVIEW" FontSize="18" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                                <StackLayout x:Name="ocjena" IsVisible="true">
+                                    <fRating:RatingBar x:Name="Rating"
+                                                   SelectedStarValue="1"
+                                                   ImageHeight="20"
+                                                   ImageWidth="20"
+                                                   HorizontalOptions="Center"
+                                                   FlowDirection="LeftToRight"
+                                                   EmptyStarImage="emptyStar"
+                                                   FillStarImage="fillStar">
+                                    </fRating:RatingBar>
+                                </StackLayout>
+
+                                <!--Korisnikov komentar-->
+                                <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Center" Margin="0,10,0,0">
+                                    <Image x:Name="avatar" IsVisible="false" Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label x:Name="ispisiusername" IsVisible="false" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5" Padding="0,7"></Label>
+                                </StackLayout>
+                                <Entry x:Name="komentar" Placeholder="Leave a comment"></Entry>
+                                <Label x:Name="printkomentar" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Label x:Name="yourReview" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Button x:Name="print" Clicked="print_Clicked" Text="Send" Margin="50,0,50,0" CornerRadius="10" FontAttributes="Bold"></Button>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,15,40,15"/>
+                            </StackLayout>
+
+                        </StackLayout>
+
+                        </StackLayout>
+                    </ScrollView>
+                </Frame>
+            </StackLayout>
+        </Grid>
+</ContentPage>

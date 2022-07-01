@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 xmlns:fRating="clr-namespace:Rating;assembly=Rating"
+                 x:Class="MovieMall.Aquaman"
+                 BackgroundColor="#03051a"
+                 Title="AQUAMAN">
+    <Grid>
+
+        <!-- Pozadinska slika -->
+        <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+            <Frame HeightRequest="260" BackgroundColor="Black" Padding="0" Margin="0" CornerRadius="25">
+                <Image Source="https://images.wallpapersden.com/image/download/poster-of-aquaman_bGhnaWuUmZqaraWkpJRmaWllrW5lZQ.jpg"/>
+            </Frame>
+        </StackLayout>
+
+
+        <!-- Podloga za informacije -->
+        <StackLayout Padding="0" Margin="0,155,0,0" HorizontalOptions="FillAndExpand">
+            <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0" CornerRadius="25">
+
+
+                <!-- Informacije o filmu -->
+                <ScrollView>
+                    <StackLayout>
+
+                        <!-- Osnovne informacije o filmu -->
+                        <StackLayout Margin="30,45,20,20">
+                            <StackLayout>
+                                <Image Source="https://i.ibb.co/ZYvpgf4/Aquaman.png" HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <Label Text="Aquaman" FontSize="25" FontAttributes="Bold" TextColor="Black" Margin="0,15,0,0"/>
+                            <Label Text="2018 Fantasy / Action / Adventure" FontSize="15"/>
+                            <Label Text="2h 23m / PG-13" FontSize="15"/>
+                        </StackLayout>
+
+                        <!-- Linija -->
+                        <Line X1="330"
+                              Y1="0"  
+                              Stroke="Gray"
+                              Margin="30,0,30,4"/>
+
+                        <!-- Kratak sadrzaj -->
+                        <StackLayout>
+                            <Label TextColor="#37383b" Margin="30,5,30,15" CharacterSpacing="0.5" FontSize="15"  Text="Arthur Curry, the human-born heir to the underwater kingdom of Atlantis, goes on a quest to prevent a war between the worlds of ocean and land."/>
+                        </StackLayout>
+
+                        <Line X1="330"
+                              Y1="0"
+                              Stroke="Gray"
+                              Margin="30,0,30,10"/>
+
+                        <StackLayout Margin="30,0,10,20">
+                            <Label Text="CAST" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                            <!-- Glumci prvi red -->
+                            <StackLayout Orientation="Horizontal">
+
+                                <StackLayout>
+                                    <Frame
+                                            CornerRadius="50"
+                                            HeightRequest="40"
+                                            WidthRequest="40"
+                                            IsClippedToBounds="True"
+                                            Margin="0,5"
+                                            BorderColor="Black"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center">
+
+                                        <Image Source="https://i.pinimg.com/originals/dd/f9/e5/ddf9e5efbfbff7d236373e6456094672.jpg" 
+                                               Aspect="AspectFill" 
+                                               Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Jason Momoa &#10;as Aquaman"/>
+                                </StackLayout>
+
+                                <StackLayout Padding="3,0">
+                                    <Frame
+                                            CornerRadius="50"
+                                            HeightRequest="40"
+                                            WidthRequest="40"
+                                            IsClippedToBounds="True"
+                                            Margin="0,5"
+                                            BorderColor="Black"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center">
+
+                                        <Image Source="https://m.media-amazon.com/images/M/MV5BMjA4NDkyODA3M15BMl5BanBnXkFtZTgwMzUzMjYzNzM@._V1_.jpg" 
+                                               Aspect="AspectFill" 
+                                               Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Amber Heard &#10;as Mera"/>
+                                </StackLayout>
+
+                                <StackLayout Padding="3,0">
+                                    <Frame
+                                            CornerRadius="50"
+                                            HeightRequest="40"
+                                            WidthRequest="40"
+                                            IsClippedToBounds="True"
+                                            Margin="0,5"
+                                            BorderColor="Black"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center">
+
+                                        <Image Source="https://images.mubicdn.net/images/cast_member/822/cache-680-1546796690/image-w856.jpg?size=800x" 
+                                               Aspect="AspectFill" 
+                                               Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Willem Dafoe &#10;as Vulko"/>
+                                </StackLayout>
+
+                                <StackLayout Padding="5,0">
+                                    <Frame
+                                            CornerRadius="50"
+                                            HeightRequest="40"
+                                            WidthRequest="40"
+                                            IsClippedToBounds="True"
+                                            Margin="0,5"
+                                            BorderColor="Black"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center">
+
+                                        <Image Source="https://www.hollywoodreporter.com/wp-content/uploads/2019/11/patrick_wilson_-_getty_-_h_2019_.jpg" 
+                                               Aspect="AspectFill" 
+                                               Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Patrick Wilson &#10;as King Orm"/>
+                                </StackLayout>
+
+                            </StackLayout>
+
+                            <!-- Glumci drugi red -->
+                            <StackLayout Orientation="Horizontal" Padding="0,10">
+
+                                <StackLayout>
+                                    <Frame
+                                            CornerRadius="50"
+                                            HeightRequest="40"
+                                            WidthRequest="40"
+                                            IsClippedToBounds="True"
+                                            Margin="0,5"
+                                            BorderColor="Black"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center">
+
+                                        <Image Source="https://www.tportal.hr/media/thumbnail/w1000/1642033.jpeg" 
+                                               Aspect="AspectFill" 
+                                               Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Nicole Kidman &#10;as Atlanta"/>
+                                </StackLayout>
+
+                                <StackLayout Padding="8,0">
+                                    <Frame
+                                            CornerRadius="50"
+                                            HeightRequest="40"
+                                            WidthRequest="40"
+                                            IsClippedToBounds="True"
+                                            Margin="0,5"
+                                            BorderColor="Black"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center">
+
+                                        <Image Source="https://media.npr.org/assets/img/2014/09/04/453500404-693181c0aa348a2c05026586f8bb48d310819e03-s1100-c50.jpg" 
+                                               Aspect="AspectFill" 
+                                               Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Dolph Lundgren &#10;as King Nereus"/>
+                                </StackLayout>
+
+                                <StackLayout Padding="0,0">
+                                    <Frame  
+                                            CornerRadius="50"
+                                            HeightRequest="40"
+                                            WidthRequest="40"
+                                            IsClippedToBounds="True"
+                                            Margin="0,5"
+                                            BorderColor="Black"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center">
+
+                                        <Image Source="https://media.allure.com/photos/5ea711a2ad6aae0008773b2e/master/pass/yahya-abdul-mateen-ii-quarantine-hair.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Yahya Abdul-Mateen II &#10;as Manta"/>
+                                </StackLayout>
+
+                                <StackLayout Padding="0,0">
+                                    <Frame  
+                                            CornerRadius="50"
+                                            HeightRequest="40"
+                                            WidthRequest="40"
+                                            IsClippedToBounds="True"
+                                            Margin="0,5"
+                                            BorderColor="Black"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center">
+
+                                        <Image Source="https://cdn.justjared.com/wp-content/uploads/headlines/2020/05/morrison-fett.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Temuera Morrison &#10;as Tom Curry"/>
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </StackLayout>
+
+                        <Line X1="330"
+                              Y1="0"
+                              Stroke="Gray"
+                              Margin="30,0,30,10"/>
+
+                        <!-- Detaljne informacije -->
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="72">
+                            <Label Text="Director" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="James Wan" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="15">
+                            <Label Text="Writers &#10;(screenplay by)&#10;&#10;&#10;(story by)" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="David Leslie &#10;Johnson-McGoldrick &#10;Will Beall &#10;&#10;Geoff Johns &#10;James Wan &#10;Will Beall" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="41">
+                            <Label Text="Produced by" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="Peter Safran &#10;Rob Cowan" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="48">
+                            <Label Text="Production &#10;company" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="DC Entertainment &#10;Warner Bros &#10;Peter Safran Productions" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="33">
+                            <Label Text="Release date" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text=" December 21, 2018 &#10; (United States)" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="73">
+                            <Label Text="Awards " FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="2 wins and 39 nomination" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="52">
+                            <Label Text="Countries  &#10;of origin" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="United States, Australia" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="65">
+                            <Label Text="Filming &#10;locations" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="Erice, Sicily, Italy" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="75">
+                            <Label Text="Budget " FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="$160–200 million" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,15" Spacing="53">
+                            <Label Text="Box office " FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="$1.148 billion" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <Line X1="330"
+                              Y1="0"
+                              Stroke="Gray"
+                              Margin="30,0,30,15"/>
+
+                        <!-- Reviews -->
+                        <StackLayout Margin="30,0,10,20">
+
+                            <Label Text="REVIEWS &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+                            <Label Text="Audience rating summary" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                            <Label Text="4.0" HorizontalOptions="CenterAndExpand" FontSize="35"/>
+                            <Image Source="https://i.ibb.co/7XwtYVb/4.png" WidthRequest="100"/>
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="50,10,50,10"/>
+                            <Label Text="Google users" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                            <Label Text="81% liked this film" HorizontalOptions="CenterAndExpand" FontSize="22"/>
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="50,10,50,10"/>
+                            <Label Text="Review-aggregation websites&#10;" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                            <Image Source="https://i.ibb.co/fQ8NCSg/Aquaman2.png" HeightRequest="275"/>
+
+                        </StackLayout>
+
+                        <Line X1="330"
+                              Y1="0"
+                              Stroke="Gray"
+                              Margin="30,0,30,15"/>
+
+                        <!-- Our personal review -->
+                        <StackLayout Margin="30,5,10,20" Spacing="15">
+
+                            <Label Text="OUR PERSONAL REVIEW &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                <Label Text="Jason Momoa never disappointed :) We &#10;can all agree that this role is like created &#10;for him! Unfortunately, we can't say that &#10;for other characters."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                <Label Text="Like Wonder Woman, this adventure marks a move in the right direction for the Justice League/DC Extended Universe, but there &#10;are some silly differences between these &#10;two movies. What we saw in Justice League is they can't speak under the water unless they are in something like an oxygen bubble, but in the Aquaman movie, they speak under the water normally." TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                <Label Text="There is a lot of violence and fights throughout the movie. We're constantly surprised by where movements start and &#10;end, and there are multiple slapstick jokes woven into each encounter."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                <Label Text="The most remarkable aspect, though, is the way 'Aquaman' pushes against the idea that every problem can be solved by violence. There are plenty of bruising fights on land &#10;and sea, plus laser shootouts and aquatic infantry clashes, but some of the most important showdowns are resolved peacefully, through conversation, negotiation, and forgiveness."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+                            <Image Source="https://i.ibb.co/7XwtYVb/4.png" HeightRequest="30"/>
+
+                        </StackLayout>
+
+                        <Line X1="330"
+                              Y1="0"
+                              Stroke="Gray"
+                              Margin="30,0,30,15"/>
+
+                        <!-- Audience reviews -->
+                        <StackLayout Margin="30,5,10,10">
+
+                            <Label Text="AUDIENCE REVIEWS &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                <Label Text="AlsExGal &#10;3 years ago   " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                <Image Source="https://i.ibb.co/5v61tGY/3-stars.png" WidthRequest="70"/>
+                            </StackLayout>
+                            <Label Text="There was embarrassing writing, embarrassing acting, and listening to Amber Heard trying to deliver this terrible dialogue with zero inflection was exhausting. Why does half of the population of Atlantis sound like they're from California?&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                <Label Text="Allie F &#10;4 months ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                <Image Source="https://i.ibb.co/7XwtYVb/4.png" WidthRequest="70"/>
+                            </StackLayout>
+                            <Label Text="I felt the plot could've been better developed, and many of the characters could have also used more development... but despite what was lacking in the story, I thoroughly enjoyed this movie.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                <Label Text="Jeff C &#10;7 months ago " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                <Image Source="https://i.ibb.co/P4qVVL3/4-5-stars-2.png" WidthRequest="70"/>
+                            </StackLayout>
+                            <Label Text="Only 1 of 2 (Wonder Woman) that DC has gotten right. Seriously, how many Batmans will it take before they calm it down on that front. Perhaps they are waiting for enough to play the part to make a Batman multiverse like Spiderman. At any rate, great picture here to watch again and again.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                <Label Text="Michael Mask &#10;1 year ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                <Image Source="https://i.ibb.co/7XwtYVb/4.png" WidthRequest="70"/>
+                            </StackLayout>
+                            <Label Text="There is A LOT going on in this movie. At times a little too much! It is a feast for the eyes wrapped up in a wild ride which saves a little room for heart and a love story to boot.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                <Label Text="Allison Rose &#10;3 years ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                <Image Source="https://i.ibb.co/syLGkvG/4-7.jpg" WidthRequest="70"/>
+                            </StackLayout>
+                            <Label Text="If you are a Momoa or DC comics fan you will be pleased to know that this Aquaman is a quality version and won't disappoint even the most skeptical amongst us.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                <Label Text="Jason Gorber &#10;3 years ago " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                            </StackLayout>
+                            <Label Text="Aquaman is a success. The film makes the most out of its fine cast and psychedelic imagery and remembers to have some fun along with the world building.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout>
+                                
+                                <!--Korisnikova ocjena zvjezdicama-->
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,10,40,15"/>
+                                <Label Text="YOUR REVIEW" FontSize="18" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                                <StackLayout x:Name="ocjena" IsVisible="true">
+                                    <fRating:RatingBar x:Name="Rating"
+                                                   SelectedStarValue="1"
+                                                   ImageHeight="20"
+                                                   ImageWidth="20"
+                                                   HorizontalOptions="Center"
+                                                   FlowDirection="LeftToRight"
+                                                   EmptyStarImage="emptyStar"
+                                                   FillStarImage="fillStar">
+                                    </fRating:RatingBar>
+                                </StackLayout>
+
+                                <!--Korisnikov komentar-->
+                                <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Center" Margin="0,10,0,0">
+                                    <Image x:Name="avatar" IsVisible="false" Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label x:Name="ispisiusername" IsVisible="false" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5" Padding="0,7"></Label>
+                                </StackLayout>
+                                <Entry x:Name="komentar" Placeholder="Leave a comment"></Entry>
+                                <Label x:Name="printkomentar" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Label x:Name="yourReview" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Button x:Name="print" Clicked="print_Clicked" Text="Send" Margin="50,0,50,0" CornerRadius="10" FontAttributes="Bold"></Button>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,15,40,15"/>
+                            </StackLayout>
+
+                        </StackLayout>
+
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+        </StackLayout>
+    </Grid>
+</ContentPage>

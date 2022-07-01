@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:fRating="clr-namespace:Rating;assembly=Rating"
+             x:Class="MovieMall.RedNotice"
+             BackgroundColor="#03051a"
+             Title="RED NOTICE">
+    
+    <Grid>
+
+            <!-- Pozadinska slika -->
+            <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                <Frame HeightRequest="230" BackgroundColor="Black" Padding="0" Margin="0" CornerRadius="25">
+                    <Image Source="https://fictionhorizon.com/wp-content/uploads/2021/11/30735EF8-A1E7-472B-86D9-C96487E156B1.jpeg"/>
+                </Frame>
+            </StackLayout>
+
+
+            <!-- Podloga za informacije -->
+            <StackLayout Padding="0" Margin="0,155,0,0" HorizontalOptions="FillAndExpand">
+                <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0" CornerRadius="25">
+
+
+                    <!-- Informacije o filmu -->
+                    <ScrollView>
+                        <StackLayout>
+
+                            <!-- Osnovne informacije o filmu -->
+                            <StackLayout Margin="30,45,20,20">
+                                <StackLayout>
+                                    <Image Source="https://i.ibb.co/fdP4NNg/rednotice.png" HorizontalOptions="Center"/>
+                                </StackLayout>
+                                <Label Text="Red Notice" FontSize="25" FontAttributes="Bold" TextColor="Black" Margin="0,15,0,0"/>
+                                <Label Text="2021 Action / Comedy / Thriller" FontSize="15"/>
+                                <Label Text="1h 58m / PG-13" FontSize="15"/>
+                            </StackLayout>
+
+                            <!-- Linija -->
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,4"/>
+
+                            <!-- Kratak sadrzaj -->
+                            <StackLayout>
+                                <Label TextColor="#37383b" Margin="30,5,30,15" CharacterSpacing="0.5" FontSize="15"  Text="An Interpol agent successfully tracks down the world's most wanted art thief, with help from a rival thief. But nothing is as it seems, as a series of double-crosses ensue."/>
+                            </StackLayout>
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,10"/>
+
+                            <StackLayout Margin="30,0,10,20">
+                                <Label Text="CAST" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <!-- Glumci prvi red -->
+                                <StackLayout Orientation="Horizontal" Margin="15,0,10,20">
+
+                                    <StackLayout>
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://m.media-amazon.com/images/M/MV5BMTkyNDQ3NzAxM15BMl5BanBnXkFtZTgwODIwMTQ0NTE@._V1_UX214_CR0,0,214,317_AL_.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Dwayne Johnson &#10;as John Hartley"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="10,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://m.media-amazon.com/images/M/MV5BOTI3ODk1MTMyNV5BMl5BanBnXkFtZTcwNDEyNTE2Mg@@._V1_UY317_CR6,0,214,317_AL_.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Ryan Reynolds &#10;as Nolan Booth"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="7,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://upload.wikimedia.org/wikipedia/commons/9/99/Gal_Gadot_cropped_lighting_corrected.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Gal Gadot &#10;as The Bishop"/>
+                                    </StackLayout>
+
+                                </StackLayout>
+
+                                <!-- Glumci drugi red -->
+                                <StackLayout Orientation="Horizontal" Margin="10,0,10,20">
+
+                                    <StackLayout Padding="10,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://images.mubicdn.net/images/cast_member/429043/cache-231958-1497923700/image-w856.jpg?size=800x" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Ritu Arya &#10;as Inspector&#10;Urvashi Das"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="15,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://m.media-amazon.com/images/M/MV5BZmVjOGU4ZmQtNDM2NS00YzE3LWFiNjQtYTJlZWUzZjdlNzg0XkEyXkFqcGdeQXVyNDU0MzY2Njc@._V1_.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Ivan Mbakop &#10;as Tambwe"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="12,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://static.wikia.nocookie.net/disney/images/f/f1/Chris_Diamantopoulos.jpg/revision/latest?cb=20181119201537" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Chris &#10;Diamantopoulos &#10;as Sotto Voce"/>
+                                    </StackLayout>
+                                </StackLayout>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,10"/>
+
+                            <!-- Detaljne informacije -->
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="53">
+                                <Label Text="Director" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Rawson Marshall Thurber" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="66">
+                                <Label Text="Writer" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Rawson Marshall Thurber" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="23">
+                                <Label Text="Produced by" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Hiram Garcia &#10;Rawson Marshall Thurber&#10;Dany Garcia&#10;Blondel Aidoo&#10;Beau Flynn " TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="30">
+                                <Label Text="Production &#10;companies" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Flynn Picture Company &#10;Seven Bucks Productions&#10;Bad Version" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="18">
+                                <Label Text="Release date" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text=" November 12, 2021&#10; (United States)" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="60">
+                                <Label Text="Awards" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="1 nomination" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="53">
+                                <Label Text="Country &#10;of origin" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="United States" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="58">
+                                <Label Text="Filming &#10;location" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Rome, Italy" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="65">
+                                <Label Text="Budget" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="$200 million" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,15" Spacing="43">
+                                <Label Text="Box office" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="$160 million" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Reviews -->
+                            <StackLayout Margin="30,0,10,20">
+
+                                <Label Text="REVIEWS &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+                                <Label Text="Audience rating summary" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Label Text="4.0" HorizontalOptions="CenterAndExpand" FontSize="35"/>
+                                <Image Source="https://i.ibb.co/7XwtYVb/4.png" WidthRequest="100"/>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="50,10,50,10"/>
+                                <Label Text="Google users" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Label Text="87% liked this film" HorizontalOptions="CenterAndExpand" FontSize="22"/>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="50,10,50,10"/>
+                                <Label Text="Review-aggregation websites&#10;" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Image Source="https://i.ibb.co/N3g19t3/rednotice2.png" HeightRequest="255"/>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Our personal review -->
+                            <StackLayout Margin="30,5,10,20" Spacing="15">
+
+                                <Label Text="OUR PERSONAL REVIEW &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="The great joining between action and&#10;comedy! It surely deserves better ratings..."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="We definitely don't wanna spoil something &#10;because every 5 minutes will happen something you didn't expect, so you should &#10;be ready for surprises and a great finale." TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5" />
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="On other hand, this movie contains a lot of violence so we don't recommend it for kids under 12 years old."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="There is not so much to say when you see who the actors are. The movie is definitely promising and we highly recommend you &#10;to watch it if you are a fan of action and comedy movies like us!"  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+                                <Image Source="https://i.ibb.co/Bs7bnky/5.png" HeightRequest="30"/>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Audience reviews -->
+                            <StackLayout Margin="30,5,10,10">
+
+                                <Label Text="AUDIENCE REVIEWS &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Michael Eaton &#10;6 months ago   " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/syLGkvG/4-7.jpg" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="Despite the lacklustre critical reviews, this film really pops. Johnson and Reynolds are a perfect pairing when it comes to sarcastic quips and genuine humour. The storyline kept me gripped for the entire film, the protagonists (DJ and RR) have enough depth to make their characters worth watching.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Jack Reacher &#10;6 months ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/5v61tGY/3-stars.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="Well, Red Notice is a fun, entertaining movie, with lots of action and humor, but unfortunately completely half baked.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Kurt Stephen &#10;7 months ago " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/P4qVVL3/4-5-stars-2.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="Thank you Rawson Marshall Thurber for directing another great film! &#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="James Kendrick &#10;4 months ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/5v61tGY/3-stars.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="It is definitely entertaining and hits a few high notes here and there, especially when Reynolds's banter runs headlong into Dwayne Johnson's straight-man stoicism&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Ed K &#10;7 months ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/syLGkvG/4-7.jpg" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="Just some good dumb fun.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="emarnold15 &#10;5 months ago " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/7XwtYVb/4.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="I really didn't know what to expect with this movie. It had a great cast, but I wasn't willing to see in theaters but I ended up watching on Netflix. I was pleasantly surprised! I mean, it's nothing super original but it is a really fun watch! &#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout>
+
+                                <!--Korisnikova ocjena zvjezdicama-->
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,10,40,15"/>
+                                <Label Text="YOUR REVIEW" FontSize="18" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                                <StackLayout x:Name="ocjena" IsVisible="true">
+                                    <fRating:RatingBar x:Name="Rating"
+                                                   SelectedStarValue="1"
+                                                   ImageHeight="20"
+                                                   ImageWidth="20"
+                                                   HorizontalOptions="Center"
+                                                   FlowDirection="LeftToRight"
+                                                   EmptyStarImage="emptyStar"
+                                                   FillStarImage="fillStar">
+                                    </fRating:RatingBar>
+                                </StackLayout>
+
+                                <!--Korisnikov komentar-->
+                                <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Center" Margin="0,10,0,0">
+                                    <Image x:Name="avatar" IsVisible="false" Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label x:Name="ispisiusername" IsVisible="false" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5" Padding="0,7"></Label>
+                                </StackLayout>
+                                <Entry x:Name="komentar" Placeholder="Leave a comment"></Entry>
+                                <Label x:Name="printkomentar" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Label x:Name="yourReview" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Button x:Name="print" Clicked="print_Clicked" Text="Send" Margin="50,0,50,0" CornerRadius="10" FontAttributes="Bold"></Button>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,15,40,15"/>
+                            </StackLayout>
+
+                        </StackLayout>
+
+                        </StackLayout>
+
+                    </ScrollView>
+                </Frame>
+            </StackLayout>
+        </Grid>
+</ContentPage>

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovieMall.InProgress"
+             BackgroundColor="#03051a">
+
+    <StackLayout Margin="0" Padding="0">
+
+        <Grid>
+            <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                <Frame HeightRequest="275" BackgroundColor="#0d124a" Padding="0" Margin="0" CornerRadius="25">
+                    <Image Source="https://speckyboy.com/wp-content/uploads/2021/10/coming-soon-page-web-design-inspiration-thumb.jpg"/>
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Padding="0" Margin="0,155,0,0" HorizontalOptions="FillAndExpand">
+                <Frame BackgroundColor="White" HeightRequest="400" HasShadow="True" Padding="0" Margin="0,80,0,0" CornerRadius="25">
+                    <Label Text="Sorry, we don't have recommendations for this movie yet because they are still in progress... :("
+                           FontSize="Medium"
+                           TextColor="#0d124a"
+                           Padding="50"
+                           VerticalTextAlignment="Center"/>
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
+</ContentPage>

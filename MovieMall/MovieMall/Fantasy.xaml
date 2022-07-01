@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovieMall.Fantasy"
+             BackgroundColor="#03051a"
+             Title="FANTASY MOVIES">
+
+    <ScrollView Orientation="Vertical">
+        
+        <Grid RowSpacing="10" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="0" Grid.Column="0" Margin="10" >
+                <Frame CornerRadius="20" Margin="10" Padding="0" BackgroundColor="#0d124a">
+                    <ImageButton Source="https://images.wallpapersden.com/image/download/aquaman-textless-poster-2018_a2hoaWyUmZqaraWkpJRnZWltrWdlaW0.jpg" WidthRequest="180" HeightRequest="160" Clicked="Aquaman_Clicked" />
+                </Frame>
+                <Label Text="Aquaman" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="0" Grid.Column="1" Margin="10">
+                <Frame CornerRadius="20" Margin="10" Padding="0">
+                    <ImageButton Source="https://images.wallpapersden.com/image/download/avatar_a21qamuUmZqaraWkpJRnZWltrWdlaW0.jpg"  WidthRequest="180" Clicked="Avatar_Clicked" />
+                </Frame>
+                <Label Text="Avatar" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Grid.Column="0" Margin="10">
+                <Frame CornerRadius="20" Margin="10" Padding="0">
+                    <ImageButton Source="https://images.wallpapersden.com/image/download/the-old-guard-2020_bGZlZmmUmZqaraWkpJRnZWltrWdlaW0.jpg" WidthRequest="180" Clicked="InProgress_Clicked" />
+                </Frame>
+                <Label Text="The Old Guard" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Grid.Column="1" Margin="10">
+                <Frame CornerRadius="20" Margin="10" Padding="0">
+                    <ImageButton Source="https://images.wallpapersden.com/image/download/star-wars-8-the-last-jedi-2017_a2VnZ2mUmZqaraWkpJRnZWltrWdlaW0.jpg" WidthRequest="180" Clicked="InProgress_Clicked" />
+                </Frame>
+                <Label Text="Star Wars: The Last Jedi" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Grid.Column="0" Margin="10">
+                <Frame CornerRadius="20" Margin="10" Padding="0">
+                    <ImageButton Source="https://images.hdqwalls.com/download/beauty-and-the-beast-hd-img-2048x2048.jpg" WidthRequest="180" Clicked="InProgress_Clicked" />
+                </Frame>
+                <Label Text="Beauty and the Beast" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="2" Grid.Column="1" Margin="10">
+                <Frame CornerRadius="20" Margin="10" Padding="0">
+                    <ImageButton Source="https://images.wallpapersden.com/image/download/dr-strange-in-the-multiverse-of-madness-4k_bWhmbmeUmZqaraWkpJRnZWltrWdlaW0.jpg" WidthRequest="180" Clicked="InProgress_Clicked" />
+                </Frame>
+                <Label Text="Doctor Strange in the Multiverse of Madness" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" Grid.Column="0" Margin="10">
+                <Frame CornerRadius="20" Margin="10" Padding="0">
+                    <ImageButton Source="https://images.wallpapersden.com/image/download/fantastic-beasts-2022_bWdoZWaUmZqaraWkpJRnZWltrWdlaW0.jpg" WidthRequest="180" Clicked="InProgress_Clicked" />
+                </Frame>
+                <Label Text="Fantastic Beasts and Where to Find Them" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" Grid.Column="1" Margin="10">
+                <Frame CornerRadius="20" Margin="10" Padding="0">
+                    <ImageButton Source="https://images.wallpapersden.com/image/download/the-lord-of-the-rings-the-fellowship-of-the-ring_a21qa2uUmZqaraWkpJRnZWltrWdlaW0.jpg" WidthRequest="180" Clicked="InProgress_Clicked" />
+                </Frame>
+                <Label Text="The Lord of the Rings: The Fellowship of the Ring" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

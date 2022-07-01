@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovieMall.FastAndFurious"
+             xmlns:fRating="clr-namespace:Rating;assembly=Rating"
+             BackgroundColor="#03051a"
+             Title="THE FAST AND THE FURIOUS">
+    <Grid>
+
+        <!-- Pozadinska slika -->
+            <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                <Frame HeightRequest="700" BackgroundColor="Black" Padding="0" Margin="0" CornerRadius="25">
+                    <Image Source="https://static.wikia.nocookie.net/fastandfurious/images/8/87/Fast_One_Poster.jpg/revision/latest?cb=20200205060103"/>
+                </Frame>
+            </StackLayout>
+
+
+            <!-- Podloga za informacije -->
+            <StackLayout Padding="0" Margin="0,155,0,0" HorizontalOptions="FillAndExpand">
+                <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0" CornerRadius="25">
+
+
+                    <!-- Informacije o filmu -->
+                    <ScrollView>
+                        <StackLayout>
+
+                            <!-- Osnovne informacije o filmu -->
+                            <StackLayout Margin="30,45,20,20">
+                                <StackLayout>
+                                    <Image Source="https://i.ibb.co/5h7CfDx/Picture7.png" HorizontalOptions="Center"/>
+                                </StackLayout>
+                                <Label Text="The Fast and the Furious" FontSize="25" FontAttributes="Bold" TextColor="Black" Margin="0,15,0,0"/>
+                                <Label Text="2001 Action / Crime / Thriller" FontSize="15"/>
+                                <Label Text="1h 46m / PG-15" FontSize="15"/>
+                            </StackLayout>
+
+                            <!-- Linija -->
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,4"/>
+
+                            <!-- Kratak sadrzaj -->
+                            <StackLayout>
+                                <Label TextColor="#37383b" Margin="30,5,30,15" CharacterSpacing="0.5" FontSize="15"  Text="Los Angeles police officer Brian O'Conner must decide where his loyalty really lies when he becomes enamored with the street racing world he has been sent undercover to destroy."/>
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,10"/>
+
+                            <!-- Glumci prvi red -->
+                            <StackLayout Margin="30,0,10,20">
+                                <Label Text="CAST" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <StackLayout Orientation="Horizontal">
+
+                                    <StackLayout>
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://i.pinimg.com/474x/09/08/9d/09089d16362f8db3e4f7c6451ac24814--paul-walker-age-actor-paul-walker.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Paul Walker &#10;as Brian O'Conner"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="5,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://m.media-amazon.com/images/M/MV5BMTc1OTMwMzM3NF5BMl5BanBnXkFtZTgwMTM5MzIyODE@._V1_.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Jordana Brewster &#10;as Mia Toretto"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="1,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://m.media-amazon.com/images/M/MV5BMjExNzA4MDYxN15BMl5BanBnXkFtZTcwOTI1MDAxOQ@@._V1_.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Vin Diesel &#10;as Dominic Toretto"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="0,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://upload.wikimedia.org/wikipedia/commons/c/c6/Michelle_Rodriguez_at_the_New_York_Fashion_Week_crop.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Michelle Rodriguez &#10;as Letty"/>
+                                    </StackLayout>
+
+                                </StackLayout>
+
+                                <!-- Glumci drugi red -->
+                                <StackLayout Orientation="Horizontal" Padding="0,10">
+
+                                    <StackLayout>
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://static.wikia.nocookie.net/jamesbond/images/e/ec/Rick_Yune_-_Profile.png/revision/latest?cb=20180801095959" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Rick Yune &#10;as Johnny Tran"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="5,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN9Pk2ce7Jeue8-DpzzZKh1clo1GLURs-krJAmXn9jhh3OhX4P" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Chad Lindberg &#10;as Jesse"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="1,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://cps-static.rovicorp.com/2/Open/Getty_Images_406/Person/469009/_derived_jpg_q90_310x470_m0/Johnny%20Strong.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Johnny Strong &#10;as Leon"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="0,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://peliculas.fra1.digitaloceanspaces.com/actores/33/actor-matt-schulze-0.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Matt Schulze &#10;as Vince"/>
+                                    </StackLayout>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,10"/>
+
+                            <!-- Detaljne informacije -->
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="53">
+                                <Label Text="Director" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Rob Cohen" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="59">
+                                <Label Text="Writers" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Ken LiV (magazine article 'Racer X'), &#10;Gary Scott Thompson (screen story),&#10;Gary Scott Thompson (screenplay),&#10;Erik Bergquist (screenplay),&#10;David Ayer (screenplay)" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="23">
+                                <Label Text="Produced by" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Neal H. Moritz" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="30">
+                                <Label Text="Production &#10;company" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Universal Pictures" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="18">
+                                <Label Text="Release date" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="June 22, 2001 (United States)" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="57">
+                                <Label Text="Awards" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="11 wins, 18 nominations" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="38">
+                                <Label Text="Countries &#10;of origin" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="United States, Germany" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="45">
+                                <Label Text="Filming &#10;locations" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Hemet, California, USA" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="60">
+                                <Label Text="Budget" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="$38 million" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,15" Spacing="38">
+                                <Label Text="Box office" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="$207.3 million" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Reviews -->
+                            <StackLayout Margin="30,0,10,20">
+
+                                <Label Text="REVIEWS &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+                                <Label Text="Audience rating summary" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Label Text="4.6" HorizontalOptions="CenterAndExpand" FontSize="35"/>
+                                <Image Source="https://i.ibb.co/P4qVVL3/4-5-stars-2.png" WidthRequest="85"/>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="50,10,50,10"/>
+                                <Label Text="Google users" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Label Text="89% liked this film" HorizontalOptions="CenterAndExpand" FontSize="22"/>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="50,10,50,10"/>
+                                <Label Text="Review-aggregation websites&#10;" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Image Source="https://i.ibb.co/JtjwYQq/Picture10.png" HeightRequest="200"/>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Our personal review -->
+                            <StackLayout Margin="30,5,10,20" Spacing="15">
+
+                                <Label Text="OUR PERSONAL REVIEW &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="If you love cars, style of 2000's, racing, action and great story, this movie is for you."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="We personally think this is one of the best car action movies ever made, along with '2 Fast 2 Furious', 'The Fast and the Furious: Tokyo Drift' and 'Fast and Furious' (FF4)." TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5" />
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="Cast of this movie is just incredible and you'll enjoy every second of it."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="There is still some ups and downs (like in every movie) but we give this one  -->  4.5 / 5. "  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+                                <Image Source="https://i.ibb.co/P4qVVL3/4-5-stars-2.png" HeightRequest="30"/>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Audience reviews -->
+                            <StackLayout Margin="30,5,10,10">
+
+                            <Label Text="AUDIENCE REVIEWS" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Damian Boyce &#10;2 months ago   " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/7XwtYVb/4.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="It's a enjoyable and entertaining action film. But who knew from such humble beginnings one of the BIGGEST series in Movie history would be born.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="The Real Marc C. &#10;2 years ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="This movie's cast gives their all in their performances. The late Paul Walker's performance is a highlight, as well as Vin Diesel. The storyline of the film is quite exciting and the buildup to the mystery of the movie is quite interesting. The way of Director Rob Cohen is visually different from other films of the same genre. It's not a movie for children but it's not a gory and nude film either. It just has some profanity and violence. The rest of the cast play their parts very well too. Overall, it is an enjoyable action film with good actors and beautiful cars.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Laura Suarez &#10;10 months ago " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="What a classic. Best fast and furious movie of the franchise. I recently watched F9 and compared to this the 1st one is so much better. The cast is great vin diesel is great for Dom. Paul Walker (R.I.P) was a great fit for Brian. The storyline is great about street racers having to do whatever it takes to survive. What a classic 11/10 for sure.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="XA36 Avaneesh Nair &#10;a year ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="One of the best movies of all time. Greatly done by Vin Diesel and Paul Walker. A proper mixture of anger,emotion,action,drama,etc. But I watched the film yesterday and I cried so much you can't even imagine and most of the faf fans know why I cried. I cried because earth lost an angel which we get once in a lifetime.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Toyota Supra Boi &#10;2 years ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="Come on. How could you not give this 5 stars after what it did for the car community.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="C Kentt &#10;2 years ago " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/7XwtYVb/4.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="If you love fast cars, good driving action. Than you'll enjoy this flick. If you follow the movies than like the character growth and twists that come into play.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout>
+
+                                <!--Korisnikova ocjena zvjezdicama-->
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,10,40,15"/>
+                                <Label Text="YOUR REVIEW" FontSize="18" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                                <StackLayout x:Name="ocjena" IsVisible="true">
+                                    <fRating:RatingBar x:Name="Rating"
+                                                   SelectedStarValue="1"
+                                                   ImageHeight="20"
+                                                   ImageWidth="20"
+                                                   HorizontalOptions="Center"
+                                                   FlowDirection="LeftToRight"
+                                                   EmptyStarImage="emptyStar"
+                                                   FillStarImage="fillStar">
+                                    </fRating:RatingBar>
+                                </StackLayout>
+
+                                <!--Korisnikov komentar-->
+                                <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Center" Margin="0,10,0,0">
+                                    <Image x:Name="avatar" IsVisible="false" Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label x:Name="ispisiusername" IsVisible="false" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5" Padding="0,7"></Label>
+                                </StackLayout>
+                                <Entry x:Name="komentar" Placeholder="Leave a comment"></Entry>
+                                <Label x:Name="printkomentar" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Label x:Name="yourReview" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Button x:Name="print" Clicked="print_Clicked" Text="Send" Margin="50,0,50,0" CornerRadius="10" FontAttributes="Bold"></Button>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,15,40,15"/>
+                            </StackLayout>
+                        </StackLayout>
+
+                        </StackLayout>
+                    </ScrollView>
+                </Frame>
+            </StackLayout>
+    </Grid>
+</ContentPage>

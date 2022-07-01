@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovieMall.About"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid>
+        <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+            <Frame HeightRequest="900" Padding="0" Margin="0">
+                <Image Source="https://i.ibb.co/5Rm2HLX/about-pozadina.png" Aspect="AspectFill" Margin="0" />
+            </Frame>
+        </StackLayout>
+
+        <StackLayout Margin="30,295,30,0" >
+
+            <StackLayout Spacing="-10">
+                <Image Source="https://i.ibb.co/27nQ8GW/logoo.png" HeightRequest="80"/>
+                <Image Source="https://i.ibb.co/KV9z5tN/picturetopeople-org-47bb1a73d4ac0f02bcbf2f0ad31adecdbc5091f94b66b4456e.png"/>
+            </StackLayout>
+            
+            <Label Text="Tired of searching and scrolling for good recommendations for movies? We have a solution - Movie Mall Application is created to give you the best rated and recommended movies!" TextColor="White" CharacterSpacing="0.3" HorizontalTextAlignment="Center" FontSize="15" Margin="0,20,0,0"/>
+
+            <StackLayout Margin="10,70,10,0" Spacing="10">
+                <Button Text="Login &amp; Subscribe" Clicked="Login_Clicked" TextTransform="None" BackgroundColor="#432978" TextColor="White" CornerRadius="10" FontAttributes="Bold" CharacterSpacing="0.3"/>
+            </StackLayout>
+
+        </StackLayout>
+    </Grid>
+    
+</ContentPage>

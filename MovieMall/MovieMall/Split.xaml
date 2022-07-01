@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:fRating="clr-namespace:Rating;assembly=Rating"
+             x:Class="MovieMall.Split"
+             BackgroundColor="#03051a"
+             Title="SPLIT">
+
+    <Grid>
+
+            <!-- Pozadinska slika -->
+            <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                <Frame HeightRequest="235" BackgroundColor="Black" Padding="0" Margin="0" CornerRadius="25">
+                    <Image Source="https://otakukart.com/wp-content/uploads/2021/06/Split-movie-1.jpg"/>
+                </Frame>
+            </StackLayout>
+
+
+            <!-- Podloga za informacije -->
+            <StackLayout Padding="0" Margin="0,155,0,0" HorizontalOptions="FillAndExpand">
+                <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0" CornerRadius="25">
+
+
+                    <!-- Informacije o filmu -->
+                    <ScrollView>
+                        <StackLayout>
+
+                            <!-- Osnovne informacije o filmu -->
+                            <StackLayout Margin="30,45,20,20">
+                                <StackLayout>
+                                    <Image Source="https://i.ibb.co/8rnns8M/Split.png" HorizontalOptions="Center"/>
+                                </StackLayout>
+                                <Label Text="Split" FontSize="25" FontAttributes="Bold" TextColor="Black" Margin="0,15,0,0"/>
+                                <Label Text="2016 Thriller / Horror" FontSize="15"/>
+                                <Label Text="1h 57m / PG-13" FontSize="15"/>
+                            </StackLayout>
+
+                            <!-- Linija -->
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,4"/>
+
+                            <!-- Kratak sadrzaj -->
+                            <StackLayout>
+                                <Label TextColor="#37383b" Margin="30,5,30,15" CharacterSpacing="0.5" FontSize="15"  Text="Three girls are kidnapped by a man with a diagnosed 23 distinct personalities. They must try to escape before the apparent emergence of a frightful new 24th."/>
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,10"/>
+
+                            <StackLayout Margin="30,0,10,20">
+                                <Label Text="CAST" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <!-- Glumci prvi red -->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <StackLayout>
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://media.cntraveller.com/photos/611be8c7f6bd8f17556dac6a/master/w_1600%2Cc_limit/james-mcavoy-soho-new-york-conde-nast-traveller-27sept17-getty_.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="James McAvoy &#10;as Dennis"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="3,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://s.yimg.com/ny/api/res/1.2/73xIaUhucepQlMkXVfQZZg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTMyMQ--/https://s.yimg.com/uu/api/res/1.2/iTO7tGHZjrl8sqnye7QcrQ--~B/aD05OTY7dz0xOTg0O2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/hearst_womens_health_52/ec2f7c5fc1df04a507bf159a8c81cbe5" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Anya Taylor-Joy &#10;as Casey Cooke"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="3,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://upload.wikimedia.org/wikipedia/commons/5/5f/Portrait_Photograph_of_Haley_Lu_Richardson.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Haley Lu &#10;Richardson &#10;as Claire Benoit"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="4,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://topsexymodels.net/wp-content/uploads/2020/05/image-3337.png" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Jessica Sula &#10;as Marciar"/>
+                                    </StackLayout>
+
+                                </StackLayout>
+
+                                <!-- Glumci drugi red -->
+                                <StackLayout Orientation="Horizontal" Padding="0,10">
+
+                                    <StackLayout>
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://www.advocate.com/sites/default/files/bettyx750.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Betty Buckley &#10;as Dr. Karen Fletcher"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="7,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://images.mubicdn.net/images/cast_member/535483/cache-263207-1506937015/image-w856.jpg?size=800x" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Izzie Coffey &#10;as Five-Year-Old Casey"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="0,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://www.out.com/sites/default/files/2016/07/29/bwh_headshot_other6.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Brad William Henke &#10;as Uncle John"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="8,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://static.wikia.nocookie.net/dubbing9585/images/9/98/Sebastian_Arcelus.jpg/revision/latest/top-crop/width/360/height/450?cb=20200415131236" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Sebastian Arcelus &#10;as Casey's Fathere"/>
+                                    </StackLayout>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,10"/>
+
+                            <!-- Detaljne informacije -->
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="53">
+                                <Label Text="Director" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="M. Night Shyamalan" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="66">
+                                <Label Text="Writer" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="M. Night Shyamalan" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="23">
+                                <Label Text="Produced by" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="M. Night Shyamalan &#10;Jason Blum &#10;Marc Bienstock" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="30">
+                                <Label Text="Production &#10;companies" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Universal Pictures &#10;Blinding Edge Pictures &#10;Blumhouse Productions" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="22">
+                                <Label Text="Release date" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="January 20, 2017 (United Kingdom)" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="57">
+                                <Label Text="Awards" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="10 wins, 26 nominations" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="38">
+                                <Label Text="Countries &#10;of origin" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="United States &#10;Japan" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="45">
+                                <Label Text="Filming &#10;locations" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Philadelphia Zoo - 3400 &#10;W. Girard Avenue, &#10;Philadelphia, Pennsylvania, USA" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="60">
+                                <Label Text="Budget" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="$9 million" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,15" Spacing="38">
+                                <Label Text="Box office" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="$278.5 million" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Reviews -->
+                            <StackLayout Margin="30,0,10,20">
+
+                                <Label Text="REVIEWS &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+                                <Label Text="Audience rating summary" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Label Text="4.3" HorizontalOptions="CenterAndExpand" FontSize="35"/>
+                                <Image Source="https://i.ibb.co/7XwtYVb/4.png" WidthRequest="100"/>
+                                <Line X1="330"
+                                      Y1="0"
+                                      X2="0"
+                                      Stroke="Gray"
+                                      Margin="50,10,50,10"/>
+                                <Label Text="Google users" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Label Text="86% liked this film" HorizontalOptions="CenterAndExpand" FontSize="22"/>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="50,10,50,10"/>
+                                <Label Text="Review-aggregation websites&#10;" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Image Source="https://i.ibb.co/5nYPHHG/Split-Review.png" HeightRequest="305"/>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Our personal review -->
+                            <StackLayout Margin="30,5,10,20" Spacing="15">
+
+                                <Label Text="OUR PERSONAL REVIEW &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="Oh boy where to start. James McAvoy killed it!! His acting was astonishing throughout the film. And very thoughtful dialogues too  - 'We are what we believe we are', 'The broken are the most evolved'."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="With a great story, fantastic direction and a phenomenal acting display from the leads of the movie, SPLIT is a 2 hour Psychological-Thriller that will keep you guessing until the very end." TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5" />
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="And yes... movie gets a bit boring if you're not into this kind of movies. At some parts the movie is really slow, but not in annoying way, it's actually showing what Dennis is thinking at the moment and what he's going thru."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="It's a good movie to watch and we definitely recommend it. But because of some very slow moments we give it 4/5. :)"  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+                                <Image Source="https://i.ibb.co/P4qVVL3/4-5-stars-2.png" HeightRequest="30"/>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Audience reviews -->
+                            <StackLayout Margin="30,5,10,10">
+
+                                <Label Text="AUDIENCE REVIEWS &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Indrita &#10;a year ago   " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/5v61tGY/3-stars.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="It's a film worth watching . There's a lot of information about the disorder -' Dissociative Identity Disorder' like how a person or even any animal facing the disorder can have different iq, different health issues and all together several personality for each character , he/she thinks them to be. But, the movie inflicts fear rather than spreading awareness,thus the movie could be shown in a more practical and positive way that could lighten up the people to help others. &#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="tHe NiGhTmArE &#10;a year ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="Split is a film that impressed me with its complexity and unique story! James McAvoy a very good actor who did not play only one role played 24 characters, this shows how good an actor he is ...&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Lilikoi McCreadie &#10;2 years ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="Split was a really good movie. I find it fascinating that James Mcavoy was able to portray so many characters, he was also able to switch in seconds. It was so easy to tell which person he was with not only his voices he did for each character, but also the way his posture was as well. Each of these 9 personas portrayed in the film were completely different despite being played by the same actor. &#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Evelin Tivadari &#10;11 months ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/pfdB07c/2.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="Here is one star for the effort and an other one for James McAvoy's 'so brilliant that it's nearly creepy' acting. &#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="1">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Oblivion Approaches &#10;a year ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="It's a great movie of how the mind works or how it fails to work.  It kind of explains the different ways or maybe more accurately weird ways people see and interpret things. James McAvoy has done a perfect job for the different personalities. &#10;The 9 year old dancing is entertainingly creepy. &#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Barber Balan &#10;9 months ago " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="Like pretty much every other M Night Shyamalan movie, SPLIT is an extremely under-rated movie. You think Heath Ledger was good in The Dark Knight, James McAvoy in SPLIT is Phenomenal and deserved the Oscar that year and was unfortunately Robbed. &#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout>
+
+                                <!--Korisnikova ocjena zvjezdicama-->
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,10,40,15"/>
+                                <Label Text="YOUR REVIEW" FontSize="18" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                                <StackLayout x:Name="ocjena" IsVisible="true">
+                                    <fRating:RatingBar x:Name="Rating"
+                                                   SelectedStarValue="1"
+                                                   ImageHeight="20"
+                                                   ImageWidth="20"
+                                                   HorizontalOptions="Center"
+                                                   FlowDirection="LeftToRight"
+                                                   EmptyStarImage="emptyStar"
+                                                   FillStarImage="fillStar">
+                                    </fRating:RatingBar>
+                                </StackLayout>
+
+                                <!--Korisnikov komentar-->
+                                <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Center" Margin="0,10,0,0">
+                                    <Image x:Name="avatar" IsVisible="false" Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label x:Name="ispisiusername" IsVisible="false" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5" Padding="0,7"></Label>
+                                </StackLayout>
+                                <Entry x:Name="komentar" Placeholder="Leave a comment"></Entry>
+                                <Label x:Name="printkomentar" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Label x:Name="yourReview" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Button x:Name="print" Clicked="print_Clicked" Text="Send" Margin="50,0,50,0" CornerRadius="10" FontAttributes="Bold"></Button>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,15,40,15"/>
+                            </StackLayout>
+
+                        </StackLayout>
+
+                        </StackLayout>
+                    </ScrollView>
+                </Frame>
+            </StackLayout>
+        </Grid>
+</ContentPage>

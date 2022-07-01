@@ -1,0 +1,422 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:fRating="clr-namespace:Rating;assembly=Rating"
+             x:Class="MovieMall.Avengers"
+             BackgroundColor="#03051a"
+             Title="Avengers: Endgame">
+    
+    <Grid>
+
+            <!-- Pozadinska slika -->
+            <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                <Frame HeightRequest="310" BackgroundColor="Black" Padding="0" Margin="0" CornerRadius="25">
+                    <Image Source="https://images.squarespace-cdn.com/content/v1/59d7e2c7e45a7c0ce235bb55/1556292830701-LR849KLULMTLSWOSGSX0/Avengers-Endgame-Film-Review.jpg?format=1000w"/>
+                </Frame>
+            </StackLayout>
+
+
+            <!-- Podloga za informacije -->
+            <StackLayout Padding="0" Margin="0,155,0,0" HorizontalOptions="FillAndExpand">
+                <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0" CornerRadius="25">
+
+
+                    <!-- Informacije o filmu -->
+                    <ScrollView>
+                        <StackLayout>
+
+                            <!-- Osnovne informacije o filmu -->
+                            <StackLayout Margin="30,45,20,20">
+                                <StackLayout>
+                                    <Image Source="https://i.ibb.co/4g9dW4C/aveng.png" HorizontalOptions="Center"/>
+                                </StackLayout>
+                                <Label Text="Avengers: Endgame" FontSize="25" FontAttributes="Bold" TextColor="Black" Margin="0,15,0,0"/>
+                                <Label Text="2019 Action / Adventure / Sci-fi" FontSize="15"/>
+                                <Label Text="3h 2m / PG-13" FontSize="15"/>
+                            </StackLayout>
+
+                            <!-- Linija -->
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,4"/>
+
+                            <!-- Kratak sadrzaj -->
+                            <StackLayout>
+                                <Label TextColor="#37383b" Margin="30,5,30,15" CharacterSpacing="0.5" FontSize="15"  Text="After the devastating events of Avengers: Infinity War (2018), the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos' actions and restore balance to the universe."/>
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,10"/>
+
+                            <StackLayout Margin="30,0,10,20">
+                                <Label Text="CAST" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <!-- Glumci prvi red -->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <StackLayout>
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://www.ed92.org/wp-content/uploads/2021/12/Robert-Downey-Jr.-780x585.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Robert Downey Jr. &#10;as Tony Stark"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="3,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://pbs.twimg.com/profile_images/1247482752351588352/EgHoUNqQ.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Chris Hemsworth &#10;as Thor"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="3,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://www.tpi.it/app/uploads/2019/02/chris-evans.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Chris Evans &#10;as Steve Rogers"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="4,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://www.gannett-cdn.com/media/USATODAY/USATODAY/2013/05/30/1369952109000-D03-Indie-Ruffalo-28-1305301816_3_4.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Mark Ruffalo &#10;as Bruce Banner"/>
+                                    </StackLayout>
+
+                                </StackLayout>
+
+                                <!-- Glumci drugi red -->
+                                <StackLayout Orientation="Horizontal" Padding="0,10">
+
+                                    <StackLayout>
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://e3.365dm.com/21/11/2048x1152/skynews-scarlett-johansson_5587974.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Scarlett Johansson &#10;as Natasha Romanoff"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="3,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://media.gq.com/photos/5d71114edd29ba000890a0bb/3:4/w_2075,h_2767,c_limit/GQ-JeremyRenner-090519.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Jeremy Renner &#10;as Clint Barton"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="9,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://see.news/wp-content/uploads/2022/01/download-3-1.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Benedict Cumberbatch &#10;as Doctor Strange"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="0,0">
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://www.thewrap.com/wp-content/uploads/2022/04/brie-larson-620x400.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Brie Larson &#10;as Carol Danvers"/>
+                                    </StackLayout>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,10"/>
+
+                            <!-- Detaljne informacije -->
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="45">
+                                <Label Text="Directors" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Anthony Russo &#10;Joe Russo" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="60">
+                                <Label Text="Writers" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="Christopher Markus (screenplay),&#10;Stephen McFeely (screenplay),&#10;Stan Lee (based on the &#10;Marvel comics)" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="25">
+                                <Label Text="Produced by" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Kevin Feige" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="33">
+                                <Label Text="Production &#10;companies" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Marvel Studios &#10;Walt Disney Pictures" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="22">
+                                <Label Text="Release date" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="April 26, 2019 (United States)" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="60">
+                                <Label Text="Awards" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="70 wins, 132 nominations" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="53">
+                                <Label Text="Country &#10;of origin" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="United States" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="48">
+                                <Label Text="Filming &#10;locations" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Durham Cathedral, &#10;Durham, County Durham, &#10;England, UK" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="63">
+                                <Label Text="Budget" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="$356–400 million" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,15" Spacing="41">
+                                <Label Text="Box office" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="$2.798 billion" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Reviews -->
+                            <StackLayout Margin="30,0,10,20">
+
+                                <Label Text="REVIEWS &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+                                <Label Text="Audience rating summary" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Label Text="4.7" HorizontalOptions="CenterAndExpand" FontSize="35"/>
+                                <Image Source="https://i.ibb.co/syLGkvG/4-7.jpg" WidthRequest="100"/>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="50,10,50,10"/>
+                                <Label Text="Google users" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Label Text="94% liked this film" HorizontalOptions="CenterAndExpand" FontSize="22"/>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="50,10,50,10"/>
+                                <Label Text="Review-aggregation websites&#10;" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Image Source="https://i.ibb.co/tmhG0jz/avengeri.png" HeightRequest="255"/>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Our personal review -->
+                            <StackLayout Margin="30,5,10,20" Spacing="15">
+
+                                <Label Text="OUR PERSONAL REVIEW &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="What to say... great story as always with our favourite heroes."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="We really love that this legendary movie franchise got an epic ending...but a sad one tho, so if you haven't watched it prepare for an emotional roller coaster." TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5" />
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="The film's storytelling is some of the best ever seen in blockbuster filmaking, combining smart writing, intimate character moments, and exceptional world building to create one of the best blockbuster stories ever."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="The last film of the 'Avengers' franchise, Endgame, is remarkable and doesn't disappoint."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+                                <Image Source="https://i.ibb.co/Bs7bnky/5.png" HeightRequest="30"/>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Audience reviews -->
+                            <StackLayout Margin="30,5,10,10">
+
+                                <Label Text="AUDIENCE REVIEWS &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="James Lough &#10;4 months ago   " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="Where to begin, where to begin! You know a movie is outstanding when the end credits alone are more epic than the majority of films released in the last 20 years! This film is the pure definition of an emotional roller coaster.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Stephen Hodge &#10;3 years ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="** spoilers alert *** Avengers: Endgame in one word simply fantastic!!!!!!!!!!. &#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Li Junyi &#10;3 years ago " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="This movie is one of the best I've ever seen. To see all 23 movies (i believe) combined into one with the perfect amount of focus on each character was honestly unbelievable and i don't know how they managed to create such a good film. &#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="James Luxford &#10;4 months ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="Eleven years of Universe building, and this is the crescendo. It really pays off, I've never seen anything quite like it.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Jordan Hoffman &#10;3 years ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="The 3-hour culmination of 22 chapters in the Marvel Cinematic Universe is worth going back in time and watching again.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Lonita &#10;a year ago " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/7XwtYVb/4.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="For me, it didn't fulfill the promise of Infinity War, but it did fulfill the promise of the previous twenty movies.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout>
+
+                                <!--Korisnikova ocjena zvjezdicama-->
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,10,40,15"/>
+                                <Label Text="YOUR REVIEW" FontSize="18" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                                <StackLayout x:Name="ocjena" IsVisible="true">
+                                    <fRating:RatingBar x:Name="Rating"
+                                                   SelectedStarValue="1"
+                                                   ImageHeight="20"
+                                                   ImageWidth="20"
+                                                   HorizontalOptions="Center"
+                                                   FlowDirection="LeftToRight"
+                                                   EmptyStarImage="emptyStar"
+                                                   FillStarImage="fillStar">
+                                    </fRating:RatingBar>
+                                </StackLayout>
+
+                                <!--Korisnikov komentar-->
+                                <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Center" Margin="0,10,0,0">
+                                    <Image x:Name="avatar" IsVisible="false" Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label x:Name="ispisiusername" IsVisible="false" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5" Padding="0,7"></Label>
+                                </StackLayout>
+                                <Entry x:Name="komentar" Placeholder="Leave a comment"></Entry>
+                                <Label x:Name="printkomentar" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Label x:Name="yourReview" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Button x:Name="print" Clicked="print_Clicked" Text="Send" Margin="50,0,50,0" CornerRadius="10" FontAttributes="Bold"></Button>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,15,40,15"/>
+                            </StackLayout>
+                        </StackLayout>
+
+                        </StackLayout>
+                    </ScrollView>
+                </Frame>
+            </StackLayout>
+        </Grid>
+</ContentPage>

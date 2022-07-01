@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:fRating="clr-namespace:Rating;assembly=Rating"
+             x:Class="MovieMall.TheAdamProject"
+             Title="THE ADAM PROJECT"
+             BackgroundColor="#03051a">
+
+    <Grid>
+
+        <!-- Pozadinska slika -->
+        <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+            <Frame HeightRequest="207" BackgroundColor="#03051a" Padding="0" Margin="0" CornerRadius="25">
+                <Image Source="https://camelclutchblog.com/wp-content/uploads/2022/03/The-Adam-Project-5.webp"/>
+            </Frame>
+        </StackLayout>
+
+        <!-- Podloga za informacije -->
+        <StackLayout Padding="0" Margin="0,155,0,0" HorizontalOptions="FillAndExpand">
+            <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0" CornerRadius="25">
+
+                <!-- Informacije o filmu -->
+                <ScrollView>
+                    <StackLayout>
+
+                        <!-- Osnovne informacije o filmu -->
+                        <StackLayout Margin="30,45,20,20">
+                            <StackLayout>
+                                <Image Source="https://i.ibb.co/2dMzkWv/Adam-Project.png" HorizontalOptions="Center"/>
+                            </StackLayout>
+                            <Label Text="The Adam Project" FontSize="25" FontAttributes="Bold" TextColor="Black" Margin="0,15,0,0"/>
+                            <Label Text="2022 Comedy / Adventure / Action" FontSize="15"/>
+                            <Label Text="1h 46m / PG-13" FontSize="15"/>
+                        </StackLayout>
+
+                        <!-- Linija -->
+                        <Line X1="330"
+                              Y1="0"
+                              Stroke="Gray"
+                              Margin="30,0,30,4"/>
+
+                        <!-- Kratak sadrzaj -->
+                        <StackLayout>
+                            <Label TextColor="#37383b" Margin="30,5,30,15" CharacterSpacing="0.5" FontSize="15"  Text="After accidentally crash-landing in 2022, time-traveling fighter pilot Adam Reed teams up with his 12-year-old self for a mission to save the future."/>
+                        </StackLayout>
+
+                        <Line X1="330"
+                              Y1="0"
+                              Stroke="Gray"
+                              Margin="30,0,30,10"/>
+
+                        <StackLayout Margin="30,0,10,20">
+                            <Label Text="CAST" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                            <!-- Glumci prvi red -->
+                            <StackLayout Orientation="Horizontal">
+
+                                <StackLayout>
+                                    <Frame
+                                         CornerRadius="50"
+                                         HeightRequest="40"
+                                         WidthRequest="40"
+                                         IsClippedToBounds="True"
+                                         Margin="0,5"
+                                         BorderColor="Black"
+                                         HorizontalOptions="Start"
+                                         VerticalOptions="Center">
+
+                                        <Image Source="https://m.media-amazon.com/images/M/MV5BODFmN2VmZmEtYTRjZi00ZjY1LTgxYjQtODMyNDI3ZDk4ZTJiXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UY317_CR0,0,214,317_AL_.jpg" 
+                                               Aspect="AspectFill" 
+                                               Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Ryan Reynolds &#10;as Big Adam"/>
+                                </StackLayout>
+
+                                <StackLayout Padding="0,0">
+                                    <Frame
+                                         CornerRadius="50"
+                                         HeightRequest="40"
+                                         WidthRequest="40"
+                                         IsClippedToBounds="True"
+                                         Margin="0,5"
+                                         BorderColor="Black"
+                                         HorizontalOptions="Start"
+                                         VerticalOptions="Center">
+
+                                        <Image Source="https://m.media-amazon.com/images/M/MV5BYjVjYTQ4MDYtYzYxOC00NGYyLWE0YTAtM2Q2YjViYmI4ZTg5XkEyXkFqcGdeQXVyMTI0MDc3MjA0._V1_UY317_CR91,0,214,317_AL_.jpg" 
+                                               Aspect="AspectFill" 
+                                               Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Walker Scobell &#10;as Young Adam"/>
+                                </StackLayout>
+
+                                <StackLayout Padding="3,0">
+                                    <Frame
+                                         CornerRadius="50"
+                                         HeightRequest="40"
+                                         WidthRequest="40"
+                                         IsClippedToBounds="True"
+                                         Margin="0,5"
+                                         BorderColor="Black"
+                                         HorizontalOptions="Start"
+                                         VerticalOptions="Center">
+
+                                        <Image Source="https://m.media-amazon.com/images/M/MV5BNWIzZTI1ODUtZTUzMC00NTdiLWFlOTYtZTg4MGZkYmU4YzNlXkEyXkFqcGdeQXVyNTExOTk5Nzg@._V1_UX214_CR0,0,214,317_AL_.jpg" 
+                                               Aspect="AspectFill" 
+                                               Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Mark Ruffalo &#10;as Louis Reed"/>
+                                </StackLayout>
+
+                                <StackLayout Padding="4,0">
+                                    <Frame
+                                         CornerRadius="50"
+                                         HeightRequest="40"
+                                         WidthRequest="40"
+                                         IsClippedToBounds="True"
+                                         Margin="0,5"
+                                         BorderColor="Black"
+                                         HorizontalOptions="Start"
+                                         VerticalOptions="Center">
+
+                                        <Image Source="https://m.media-amazon.com/images/M/MV5BNTA4MDgzMTc1Nl5BMl5BanBnXkFtZTcwNjQyMjIwNQ@@._V1_UY317_CR14,0,214,317_AL_.jpg" 
+                                               Aspect="AspectFill" 
+                                               Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Jennifer Garner &#10;as Ellie Reed"/>
+                                </StackLayout>
+
+                            </StackLayout>
+
+                            <!-- Glumci drugi red -->
+                            <StackLayout Orientation="Horizontal" Padding="0,10">
+
+                                <StackLayout>
+                                    <Frame
+                                         CornerRadius="50"
+                                         HeightRequest="40"
+                                         WidthRequest="50"
+                                         IsClippedToBounds="True"
+                                         Margin="0,5,5,0"
+                                         BorderColor="Black"
+                                         HorizontalOptions="Start"
+                                         VerticalOptions="Center">
+
+                                        <Image Source="https://m.media-amazon.com/images/M/MV5BMTM2MjIwOTc0Nl5BMl5BanBnXkFtZTcwNzQ5ODM1Mw@@._V1_UX214_CR0,0,214,317_AL_.jpg" 
+                                               Aspect="AspectFill" 
+                                               Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Zoe Saldana &#10;as Laura"/>
+                                </StackLayout>
+
+                                <StackLayout Padding="0,0">
+                                    <Frame
+                                         CornerRadius="50"
+                                         HeightRequest="40"
+                                         WidthRequest="40"
+                                         IsClippedToBounds="True"
+                                         Margin="5,3,0,0"
+                                         BorderColor="Black"
+                                         HorizontalOptions="Start"
+                                         VerticalOptions="Center">
+
+                                        <Image Source="https://m.media-amazon.com/images/M/MV5BMjIwMzQ1Mzg1MF5BMl5BanBnXkFtZTcwNTE4MTU5MQ@@._V1_UX214_CR0,0,214,317_AL_.jpg" 
+                                               Aspect="AspectFill" 
+                                               Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Catherine Keener &#10;as Maya Sorian"/>
+                                </StackLayout>
+
+                                <StackLayout Padding="9,0">
+                                    <Frame
+                                         CornerRadius="50"
+                                         HeightRequest="40"
+                                         WidthRequest="40"
+                                         IsClippedToBounds="True"
+                                         Margin="0,3,0,0"
+                                         BorderColor="Black"
+                                         HorizontalOptions="Start"
+                                         VerticalOptions="Center">
+
+                                        <Image Source="https://m.media-amazon.com/images/M/MV5BNTgxNjBhOWYtZjBhMS00NzhiLTg0OTQtNDdkYTg1ZWEzZjBmXkEyXkFqcGdeQXVyMjAxNTE1NTk@._V1_UY317_CR131,0,214,317_AL_.jpg" 
+                                                       Aspect="AspectFill" 
+                                                       Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Alex Mallari Jr. &#10;as Christos"/>
+                                </StackLayout>
+
+                                <StackLayout Padding="0,0">
+                                    <Frame
+                                         CornerRadius="50"
+                                         HeightRequest="40"
+                                         WidthRequest="40"
+                                         IsClippedToBounds="True"
+                                         Margin="0,3,0,0"
+                                         BorderColor="Black"
+                                         HorizontalOptions="Start"
+                                         VerticalOptions="Center">
+
+                                        <Image Source="https://m.media-amazon.com/images/M/MV5BMmIxMTI1ZmUtNGQyOS00MDEzLWEyNDgtMzk5MmZiMjViMGZiXkEyXkFqcGdeQXVyNzk2MjUyNzI@._V1_UX214_CR0,0,214,317_AL_.jpg" 
+                                               Aspect="AspectFill" 
+                                               Margin="-20" />
+                                    </Frame>
+                                    <Label Text="Braxton Bjerken &#10;as Ray"/>
+                                </StackLayout>
+
+                            </StackLayout>
+
+                        </StackLayout>
+
+                        <Line X1="330"
+                              Y1="0"
+                              Stroke="Gray"
+                              Margin="30,0,30,10"/>
+
+                        <!-- Detaljne informacije -->
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="55">
+                            <Label Text="Director" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="Shawn Levy" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="60">
+                            <Label Text="Writers" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="Jonathan Tropper &#10;T.S. Nowlin &#10;Jennifer Flackett &#10;Mark Levin" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="24">
+                            <Label Text="Produced by" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="David Ellison &#10;Dana Goldberg &#10;Don Granger &#10;Shawn Levy &#10;Ryan Reynolds" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="30">
+                            <Label Text="Production &#10;companies" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="21 Laps Entertainment &#10;Maximum Effort &#10;Skydance Media" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="18">
+                            <Label Text="Release date" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="March 11, 2022 (United States)" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="57">
+                            <Label Text="Awards" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="2 nominations" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="50">
+                            <Label Text="Country &#10;of origin" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="United States" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="46">
+                            <Label Text="Filming &#10;locations" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="British Columbia, Canada" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="61">
+                            <Label Text="Budget" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="$116 million" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <StackLayout Orientation="Horizontal" Margin="30,0,30,15" Spacing="40">
+                            <Label Text="Box office" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="/" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                        </StackLayout>
+
+                        <Line X1="330"
+                              Y1="0"
+                              Stroke="Gray"
+                              Margin="30,0,30,15"/>
+
+                        <!-- Reviews -->
+                        <StackLayout Margin="30,0,10,20">
+
+                            <Label Text="REVIEWS &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+                            <Label Text="Audience rating summary" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                            <Label Text="4.4" HorizontalOptions="CenterAndExpand" FontSize="35"/>
+                            <Image Source="https://i.ibb.co/P4qVVL3/4-5-stars-2.png " WidthRequest="100"/>
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="50,10,50,10"/>
+                            <Label Text="Google users" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                            <Label Text="90% liked this film" HorizontalOptions="CenterAndExpand" FontSize="22"/>
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="50,10,50,10"/>
+                            <Label Text="Review-aggregation websites&#10;" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                            <Image Source="https://i.ibb.co/dp8hXvn/Adam-Review.png" HeightRequest="240"/>
+
+                        </StackLayout>
+
+                        <Line X1="330"
+                              Y1="0"
+                              Stroke="Gray"
+                              Margin="30,0,30,15"/>
+
+                        <!-- Our personal review -->
+                        <StackLayout Margin="30,5,10,20" Spacing="15">
+
+                            <Label Text="OUR PERSONAL REVIEW &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                <Label Text="Time-traveling, wow, wouldn't it be great if that actually exist? Yeah, we all have some times in the past that we would like to change, but here he is, Mr. Reynolds, to show us how negative consequences that can bring if everyone could change the past."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                <Label Text="The story is refreshing, seeing young and big Adam meet in one world and accepting each other and what they would become, and what they had been." TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                <Label Text="Facing each other, they are realizing their personality and characteristics which is so hilarious!"  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                <Label Text="One of the funniest scenes is when Laura(big Adam's lost girlfriend) meets both of them and young Adam immediately crushes on his 'future' girlfriend."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+                            <Image Source="https://i.ibb.co/P4qVVL3/4-5-stars-2.png" HeightRequest="30"/>
+
+                        </StackLayout>
+
+                        <Line X1="330"
+                              Y1="0"
+                              Stroke="Gray"
+                              Margin="30,0,30,15"/>
+
+                        <!-- Audience reviews -->
+                        <StackLayout Margin="30,5,10,10">
+
+                            <Label Text="AUDIENCE REVIEWS &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                <Label Text="Amy Nicholson &#10;2 months ago " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                            </StackLayout>
+                            <Label Text="There's nothing as good as Back to the Future, but I think Levy finds the heart to this picture. It really works.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                <Label Text="Sean P. Means &#10;3 months ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                <Image Source="https://i.ibb.co/5v61tGY/3-stars.png" WidthRequest="70"/>
+                            </StackLayout>
+                            <Label Text="When Levy tries to get serious and introspective, as little Adam forces Big Adam to confront the psychological pain of losing his father, the movie discovers a new kind of cinematic time travel by making the film slow to a crawl.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                <Label Text="rallder19 &#10;3 months ago " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                <Image Source="https://i.ibb.co/7XwtYVb/4.png" WidthRequest="70"/>
+                            </StackLayout>
+                            <Label Text="This isn't going to win any Oscars, and it is far from a perfect time travel movie, but it was a fun ride. Kept my interest all the way through and had a good cast.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                <Label Text="joiningjt &#10;3 months ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                            </StackLayout>
+                            <Label Text="Excellent cast excellent script, excellent special effects, and for a streaming action comedy PHENOMENAL final product. I found it far superior to red notice and that film was extremely expensive this also had a lot of heart. We especially loved the ending it tugs at your heart a few times during the film and especially at the end and when a film can be entertaining and make you think you have a winner!!&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                <Label Text="Sarah Knight Adamson &#10;2 months ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                <Image Source="https://i.ibb.co/7XwtYVb/4.png" WidthRequest="70"/>
+                            </StackLayout>
+                            <Label Text="The delightful scenes between both older and younger Adam are the films crux, providing a pleasant viewing experience for families--Reynolds is a natural when comedy is involved, and viewing him yet again in a sci-fi role is a treat.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout Orientation="Horizontal" Spacing="10">
+                                <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                <Label Text="Daniel M. Kimmel &#10;3 months ago " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                <Image Source="https://i.ibb.co/5v61tGY/3-stars.png" WidthRequest="70"/>
+                            </StackLayout>
+                            <Label Text="The solid cast invests the story with emotion and some humor, Reynolds occasional snarkiness provides a nice counterpoint to Scobells mix of tween angst and excitement about the future.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout>
+
+                                <!--Korisnikova ocjena zvjezdicama-->
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,10,40,15"/>
+                                <Label Text="YOUR REVIEW" FontSize="18" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                                <StackLayout x:Name="ocjena" IsVisible="true">
+                                    <fRating:RatingBar x:Name="Rating"
+                                                   SelectedStarValue="1"
+                                                   ImageHeight="20"
+                                                   ImageWidth="20"
+                                                   HorizontalOptions="Center"
+                                                   FlowDirection="LeftToRight"
+                                                   EmptyStarImage="emptyStar"
+                                                   FillStarImage="fillStar">
+                                    </fRating:RatingBar>
+                                </StackLayout>
+
+                                <!--Korisnikov komentar-->
+                                <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Center" Margin="0,10,0,0">
+                                    <Image x:Name="avatar" IsVisible="false" Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label x:Name="ispisiusername" IsVisible="false" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5" Padding="0,7"></Label>
+                                </StackLayout>
+                                <Entry x:Name="komentar" Placeholder="Leave a comment"></Entry>
+                                <Label x:Name="printkomentar" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Label x:Name="yourReview" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Button x:Name="print" Clicked="print_Clicked" Text="Send" Margin="50,0,50,0" CornerRadius="10" FontAttributes="Bold"></Button>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,15,40,15"/>
+                            </StackLayout>
+
+                        </StackLayout>
+
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+        </StackLayout>
+    </Grid>
+</ContentPage>

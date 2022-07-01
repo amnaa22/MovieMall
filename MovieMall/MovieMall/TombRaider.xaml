@@ -1,0 +1,423 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:fRating="clr-namespace:Rating;assembly=Rating"
+             x:Class="MovieMall.TombRaider"
+             BackgroundColor="#03051a"
+             Title="TOMB RAIDER">
+    
+    <Grid>
+
+        <!-- Pozadinska slika -->
+            <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+                <Frame HeightRequest="231" BackgroundColor="Black" Padding="0" Margin="0" CornerRadius="25">
+                    <Image Source="https://occ-0-1722-1723.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABeHArtgPxbuSpQxxPVT-tbGrwDf8eJNHGEPdT5NaYkJomRtrLrTqugTIg9iQ56k-9p2UK0GJaGDw3MzPXUCAfb0oazalN_gHoRXX.jpg?r=1df"/>
+                </Frame>
+            </StackLayout>
+
+
+            <!-- Podloga za informacije -->
+            <StackLayout Padding="0" Margin="0,155,0,0" HorizontalOptions="FillAndExpand">
+                <Frame  BackgroundColor="White" HeightRequest="500" HasShadow="True" Padding="0" Margin="0" CornerRadius="25">
+
+
+                    <!-- Informacije o filmu -->
+                    <ScrollView>
+                        <StackLayout>
+
+                            <!-- Osnovne informacije o filmu -->
+                            <StackLayout Margin="30,45,20,20">
+                                <StackLayout>
+                                    <Image Source="https://i.ibb.co/BCgKFvB/Tomb-Raider.png" HorizontalOptions="Center"/>
+                                </StackLayout>
+                                <Label Text="Tomb Raider" FontSize="25" FontAttributes="Bold" TextColor="Black" Margin="0,15,0,0"/>
+                                <Label Text="2018 Action" FontSize="15"/>
+                                <Label Text="1h 58m / PG-13" FontSize="15"/>
+                            </StackLayout>
+
+                            <!-- Linija -->
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,4"/>
+
+                            <!-- Kratak sadrzaj -->
+                            <StackLayout>
+                                <Label TextColor="#37383b" Margin="30,5,30,15" CharacterSpacing="0.5" FontSize="15"  Text="Lara Croft (Alicia Vikander), the fiercely independent daughter of a missing adventurer, must push herself beyond her limits when she discovers the island where her father, Lord Richard Croft (Dominic West) disappeared."/>
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,10"/>
+
+                            <!-- Glumci prvi red -->
+                            <StackLayout Margin="30,0,10,20">
+                                <Label Text="CAST" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <StackLayout Orientation="Horizontal">
+
+                                    <StackLayout>
+                                        <Frame
+                                            CornerRadius="50"
+                                            HeightRequest="40"
+                                            WidthRequest="40"
+                                            IsClippedToBounds="True"
+                                            Margin="0,5"
+                                            BorderColor="Black"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center">
+
+                                            <Image Source="https://i.pinimg.com/originals/ff/10/2d/ff102db1724654685461495f1f8731fe.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Alicia Vikander &#10;as Lara Croft"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="5,0">
+                                        <Frame
+                                            CornerRadius="50"
+                                            HeightRequest="40"
+                                            WidthRequest="40"
+                                            IsClippedToBounds="True"
+                                            Margin="0,5"
+                                            BorderColor="Black"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center">
+
+                                            <Image Source="https://images.mubicdn.net/images/cast_member/23891/cache-166860-1472192030/image-w856.jpg?size=800x" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Dominic West &#10;as Richard Croft"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="1,0">
+                                        <Frame
+                                            CornerRadius="50"
+                                            HeightRequest="40"
+                                            WidthRequest="40"
+                                            IsClippedToBounds="True"
+                                            Margin="0,5"
+                                            BorderColor="Black"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center">
+
+                                            <Image Source="https://m.economictimes.com/photo/89683441.cms" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Walton Goggins &#10;as Mathias Vogel"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="0,0">
+                                        <Frame
+                                            CornerRadius="50"
+                                            HeightRequest="40"
+                                            WidthRequest="40"
+                                            IsClippedToBounds="True"
+                                            Margin="0,5"
+                                            BorderColor="Black"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center">
+
+                                            <Image Source="https://kmesh.io/img/biography/15/daniel-wu-biography.gif" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Daniel Wu &#10;as Lu Ren"/>
+                                    </StackLayout>
+
+                                </StackLayout>
+
+                                <!-- Glumci drugi red -->
+                                <StackLayout Orientation="Horizontal">
+
+                                    <StackLayout>
+                                        <Frame
+                                        CornerRadius="50"
+                                        HeightRequest="40"
+                                        WidthRequest="40"
+                                        IsClippedToBounds="True"
+                                        Margin="0,5"
+                                        BorderColor="Black"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center">
+
+                                            <Image Source="https://medias.unifrance.org/medias/75/86/22091/format_page/media.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Kristin Scott Thomas &#10;as Ana Miller"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="0,0">
+                                        <Frame
+                                            CornerRadius="50"
+                                            HeightRequest="40"
+                                            WidthRequest="40"
+                                            IsClippedToBounds="True"
+                                            Margin="0,5"
+                                            BorderColor="Black"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center">
+
+                                            <Image Source="https://static.wikia.nocookie.net/tardis/images/9/9e/Derek_Jacobi.jpg/revision/latest?cb=20180303234558" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Derek Jacobi as &#10;Mr. Yaffe"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="8,0">
+                                        <Frame
+                                            CornerRadius="50"
+                                            HeightRequest="40"
+                                            WidthRequest="40"
+                                            IsClippedToBounds="True"
+                                            Margin="0,5"
+                                            BorderColor="Black"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center">
+
+                                            <Image Source="https://fr.web.img6.acsta.net/pictures/20/09/11/15/32/5407730.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Alexandre Willaume &#10;as Lieutenant"/>
+                                    </StackLayout>
+
+                                    <StackLayout Padding="0,0">
+                                        <Frame
+                                            CornerRadius="50"
+                                            HeightRequest="40"
+                                            WidthRequest="40"
+                                            IsClippedToBounds="True"
+                                            Margin="0,5"
+                                            BorderColor="Black"
+                                            HorizontalOptions="Start"
+                                            VerticalOptions="Center">
+
+                                            <Image Source="https://media.elcinema.com/uploads/_320x_13c6ead84053b78be255d6f59acc967b644860fb06b4058eafc50d2fef3e7a3f.jpg" 
+                                                   Aspect="AspectFill" 
+                                                   Margin="-20" />
+                                        </Frame>
+                                        <Label Text="Josef Altin &#10;as Bruce the Boss"/>
+                                    </StackLayout>
+
+                                </StackLayout>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,10"/>
+
+                            <!-- Detaljne informacije -->
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="56">
+                                <Label Text="Director" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Roar Uthaug" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="61">
+                                <Label Text="Writers" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                            <Label Text="Geneva Robertson-Dworet &#10;(screenplay),&#10;Alastair Siddons (screenplay),&#10;Evan Daugherty (story),&#10;Geneva Robertson-Dworet (story)" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="25">
+                                <Label Text="Produced by" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Graham King" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="32">
+                                <Label Text="Production &#10;companies" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Warner Bros. Pictures &#10;Metro-Goldwyn-Mayer &#10;Square Enix" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="23">
+                                <Label Text="Release date" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="March 16, 2018 (United States)" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="63">
+                                <Label Text="Awards" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="8 nominations" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="43">
+                                <Label Text="Countries &#10;of origin" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="United Kingdom, &#10;United States" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="50">
+                                <Label Text="Filming &#10;locations" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="Wilton House, Wilton, &#10;Salisbury, Wiltshire, England, UK" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,10" Spacing="65">
+                                <Label Text="Budget" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="$90–106 million" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal" Margin="30,0,30,15" Spacing="43">
+                                <Label Text="Box office" FontAttributes="Bold" TextColor="Black" FontSize="15" CharacterSpacing="0.5"/>
+                                <Label Text="$274.7 million" TextColor="#37383b" FontSize="15" CharacterSpacing="0.5"/>
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Reviews -->
+                            <StackLayout Margin="30,0,10,20">
+
+                                <Label Text="REVIEWS &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+                                <Label Text="Audience rating summary" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Label Text="4.0" HorizontalOptions="CenterAndExpand" FontSize="35"/>
+                                <Image Source="https://i.ibb.co/7XwtYVb/4.png" WidthRequest="85"/>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="50,10,50,10"/>
+                                <Label Text="Google users" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Label Text="76% liked this film" HorizontalOptions="CenterAndExpand" FontSize="22"/>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="50,10,50,10"/>
+                                <Label Text="Review-aggregation websites&#10;" HorizontalOptions="CenterAndExpand" FontSize="18" TextColor="Black" CharacterSpacing="0.2" FontAttributes="Bold"/>
+                                <Image Source="https://i.ibb.co/5FGx0hJ/Tomb-Raider2.png" HeightRequest="200"/>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Our personal review -->
+                            <StackLayout Margin="30,5,10,15" Spacing="15">
+
+                                <Label Text="OUR PERSONAL REVIEW &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="For those that don't know, this movie is actually based on one of the most popular video game franchises in the history. Early movies with Angelina Jolie were based on older games, but this movie is based on the Tomb Raider 2013 reboot."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="We personaly think that this is one of the BEST video game movies out there." TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5" />
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="If you played the games, you'll love this movie."  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://d338t8kmirgyke.cloudfront.net/icons/icon_pngs/000/004/499/original/good.png" HeightRequest="40"/>
+                                    <Label Text="A lot of action, exploration and very decent story. We give it 4.7 out of 5. :)"  TextColor="DarkBlue" FontSize="15" CharacterSpacing="0.5"/>
+                                </StackLayout>
+                                <Image Source="https://i.ibb.co/syLGkvG/4-7.jpg" HeightRequest="40"/>
+
+                            </StackLayout>
+
+                            <Line X1="330"
+                                  Y1="0"
+                                  Stroke="Gray"
+                                  Margin="30,0,30,15"/>
+
+                            <!-- Audience reviews -->
+                            <StackLayout Margin="30,5,10,10">
+
+                                <Label Text="AUDIENCE REVIEWS &#10;" FontSize="22" FontAttributes="Bold" TextColor="Black"/>
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="AsasinoManik &#10;a year ago   " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/7XwtYVb/4.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="One of The best Video Game Movie Ever Made TBH! Before you totally disagree, see first of all there are not much great games based movies apart from Re series.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="James Bennett &#10;3 years ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/7XwtYVb/4.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="I thought Alicia Vikander was very good, and is perfect casting for films based off the modern games - just as Angelina Jolie was for the films based on the early games - but the script of the 2018 reboot was not great. She did the best she could with what she was given, and in fact most of the cast turned in good performances.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="African Anbu &#10;8 months ago " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="Not a bad reboot and, to be honest, #AliciaVikander does a great job in taking on the #LaraCroft character from #AngelinaJolie who we all grew to love. &#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Yogesh Adhikari &#10;3 years ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="5 Stars for this excellent movies. &#10;Tomb Raider was the most popular game series of 90's and early 2000, and every kid of those years could tell you that Lara Croft is the 'Biggest Star' of the gaming world. This movie has done justice to Tomb Raider games since the earlier 2 movies were a let down.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="AmyCroft &#10;4 years ago" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/Bs7bnky/5.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="The games had a huge impact on me and I can't explain how happy I am that this movie turned out great. :))&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                                <StackLayout Orientation="Horizontal" Spacing="10">
+                                    <Image Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label Text="Erma Spencer &#10;2 years ago " FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5"/>
+                                    <Image Source="https://i.ibb.co/7XwtYVb/4.png" WidthRequest="70"/>
+                                </StackLayout>
+                                <Label Text="A lot of great moves and a lot of cool footwork and gymnastics. A great movie for the whole family.&#10;" TextColor="#37383b" FontSize="15" CharacterSpacing="0.2" />
+
+                            <StackLayout>
+
+                                <!--Korisnikova ocjena zvjezdicama-->
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,10,40,15"/>
+                                <Label Text="YOUR REVIEW" FontSize="18" FontAttributes="Bold" TextColor="Black" HorizontalOptions="Center" />
+                                <StackLayout x:Name="ocjena" IsVisible="true">
+                                    <fRating:RatingBar x:Name="Rating"
+                                                   SelectedStarValue="1"
+                                                   ImageHeight="20"
+                                                   ImageWidth="20"
+                                                   HorizontalOptions="Center"
+                                                   FlowDirection="LeftToRight"
+                                                   EmptyStarImage="emptyStar"
+                                                   FillStarImage="fillStar">
+                                    </fRating:RatingBar>
+                                </StackLayout>
+
+                                <!--Korisnikov komentar-->
+                                <StackLayout Orientation="Horizontal" Spacing="10" HorizontalOptions="Center" Margin="0,10,0,0">
+                                    <Image x:Name="avatar" IsVisible="false" Source="https://i.ibb.co/HTKDnKz/person-icon.png" HeightRequest="40"/>
+                                    <Label x:Name="ispisiusername" IsVisible="false" FontAttributes="Bold" TextColor="Black" FontSize="13" CharacterSpacing="0.5" Padding="0,7"></Label>
+                                </StackLayout>
+                                <Entry x:Name="komentar" Placeholder="Leave a comment"></Entry>
+                                <Label x:Name="printkomentar" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Label x:Name="yourReview" IsVisible="false" HorizontalOptions="Center"></Label>
+                                <Button x:Name="print" Clicked="print_Clicked" Text="Send" Margin="50,0,50,0" CornerRadius="10" FontAttributes="Bold"></Button>
+                                <Line X1="330"
+                                      Y1="0"
+                                      Stroke="Gray"
+                                      Margin="30,15,40,15"/>
+                            </StackLayout>
+
+                        </StackLayout>
+
+                        </StackLayout>
+                    </ScrollView>
+                </Frame>
+            </StackLayout>
+        </Grid>
+</ContentPage>

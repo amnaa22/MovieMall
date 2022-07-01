@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovieMall.Romantic"
+             Title="ROMANTIC MOVIES"
+             BackgroundColor="#03051a">
+    
+    <ScrollView Orientation="Vertical">
+        
+        <Grid RowSpacing="10" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Grid.Row="0" Grid.Column="0" Margin="10" >
+                <Frame CornerRadius="20" Margin="10" Padding="0" BackgroundColor="#0d124a">
+                    <ImageButton Source="https://i.scdn.co/image/ab67616d0000b2737ad9ef1daff1af1da2a077ab" WidthRequest="180" HeightRequest="160" Clicked="TheLastSong_Clicked" />
+                </Frame>
+                <Label Text="The Last Song" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="0" Grid.Column="1" Margin="10">
+                <Frame CornerRadius="20" Margin="10" Padding="0">
+                    <ImageButton Source="after"  WidthRequest="180" Clicked="InProgress_Clicked" />
+                </Frame>
+                <Label Text="After We Fell" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Grid.Column="0" Margin="10">
+                <Frame CornerRadius="20" Margin="10" Padding="0">
+                    <ImageButton Source="led" WidthRequest="180" Clicked="Ice_Clicked" />
+                </Frame>
+                <Label Text="ICE" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Grid.Column="1" Margin="10">
+                <Frame CornerRadius="20" Margin="10" Padding="0">
+                    <ImageButton Source="https://media1.popsugar-assets.com/files/thumbor/G0G1su-ebdsIhK8DleMeVUX6X7w/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2018/06/18/926/n/1922283/550aae7e5b28207bd17789.35168771_/i/Reactions-Set-Up.jpg" WidthRequest="180" Clicked="InProgress_Clicked" />
+                </Frame>
+                <Label Text="Set It Up" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="2" Grid.Column="0" Margin="10">
+                <Frame CornerRadius="20" Margin="10" Padding="0">
+                    <ImageButton Source="cra" WidthRequest="180" Clicked="InProgress_Clicked" />
+                </Frame>
+                <Label Text="Crazy Rich Asians" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="2" Grid.Column="1" Margin="10">
+                <Frame CornerRadius="20" Margin="10" Padding="0">
+                    <ImageButton Source="https://i.scdn.co/image/ab67616d0000b273310af2a8159eba33345e822b" WidthRequest="180" Clicked="InProgress_Clicked" />
+                </Frame>
+                <Label Text="Love, Rosie" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+            
+            <StackLayout Grid.Row="3" Grid.Column="0" Margin="10">
+                <Frame CornerRadius="20" Margin="10" Padding="0">
+                    <ImageButton Source="https://i.scdn.co/image/ab67616d0000b273d43ddf427cac4a995c7964f0" WidthRequest="180" Clicked="InProgress_Clicked" />
+                </Frame>
+                <Label Text="Safe Haven" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Grid.Row="3" Grid.Column="1" Margin="10">
+                <Frame CornerRadius="20" Margin="10" Padding="0">
+                    <ImageButton Source="fl" WidthRequest="180" Clicked="InProgress_Clicked" />
+                </Frame>
+                <Label Text="First Love" TextColor="WhiteSmoke" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+
+        </Grid>
+    </ScrollView>
+</ContentPage>

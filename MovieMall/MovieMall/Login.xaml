@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovieMall.Login">
+
+    <Grid>
+        <StackLayout Padding="0" Margin="0" HorizontalOptions="FillAndExpand">
+            <Frame HeightRequest="800" Padding="0" Margin="0">
+                <Image Source="https://i.ibb.co/R7xn9K7/Login-Pozadina2.png" Aspect="AspectFill" Margin="0" />
+            </Frame>
+        </StackLayout>
+
+        <StackLayout Margin="30,195,30,10" Spacing="-10">
+            <Image Source="https://i.ibb.co/27nQ8GW/logoo.png" HeightRequest="83"/>
+            <Image Source="https://i.ibb.co/KV9z5tN/picturetopeople-org-47bb1a73d4ac0f02bcbf2f0ad31adecdbc5091f94b66b4456e.png" WidthRequest="115"/>
+        </StackLayout>
+
+        <StackLayout Margin="30,325,30,10">
+            <Label Text="Welcome back! Let's log you in" FontFamily="MovieItalic" TextColor="White" HorizontalOptions="Center" FontSize="19" CharacterSpacing="0.4"/>
+
+            <Frame BackgroundColor="LightGray" BorderColor="DarkGray" Margin="0,10,0,0" Padding="2" HorizontalOptions="FillAndExpand" CornerRadius="15">
+                <StackLayout Orientation="Horizontal">
+                    <Frame BackgroundColor="Transparent" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                        <Image Source="https://i.ibb.co/VtZw755/person-icon.png" Aspect="AspectFill" Margin="0"/>
+                    </Frame>
+                    <Entry x:Name="username" Placeholder="Username" ClearButtonVisibility="WhileEditing" FontFamily="MovieItalic" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="LightGray" BorderColor="DarkGray" Margin="0,10,0,0" Padding="2" HorizontalOptions="FillAndExpand" CornerRadius="15">
+                <StackLayout Orientation="Horizontal">
+                    <Frame BackgroundColor="Transparent" HeightRequest="40" WidthRequest="40" CornerRadius="30" Padding="0" Margin="5">
+                        <Image Source="https://i.ibb.co/4MMYGDd/109242-middle.png" Aspect="AspectFill" Margin="0"/>
+                    </Frame>
+                    <Entry x:Name="password" Placeholder="Password" ClearButtonVisibility="WhileEditing" IsPassword="True" FontFamily="MovieItalic" FontAttributes="None" HorizontalOptions="FillAndExpand" Margin="0,0,20,0"/>
+                </StackLayout>
+            </Frame>
+
+            <Button Text="Login" TextTransform="None" FontFamily="MovieItalic" BackgroundColor="#432978"  TextColor="White" Margin="50,30,50,0" CornerRadius="10" FontAttributes="Bold" CharacterSpacing="0.3" Clicked="Button_Clicked"/>
+        </StackLayout>
+
+    </Grid>
+</ContentPage>
